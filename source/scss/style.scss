@@ -1,0 +1,43 @@
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900);
+@import '../scss/null.scss';
+
+@mixin FontsizeFontWeightLineheightColor ($fs, $fw, $lh, $c) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $c;
+
+}
+
+@mixin WidthHeight ($w, $h) {
+    width: $w;
+    height: $h;
+}
+// ОБЩИЕ КЛАССЫ ДЛЯ ВСЕГО ПРОЕКТА
+.comments {
+    @include FontsizeFontWeightLineheightColor(28px,400 ,32.81px ,#424242 );
+    }
+    .allbuttons{
+        @include WidthHeight(323px,81px );
+        background-color:#8B9D83;
+        border-radius: 20px;
+        @include FontsizeFontWeightLineheightColor(16px,400 ,18px ,white )
+    }
+    
+.container {
+    width: 1920px;
+    height:auto;
+    background-color: #F3F4F0;
+    padding: 0 90px;
+
+}
+.wrapper{
+    max-width:100%;
+    height:auto;
+}
+
+
+
+@import '../scss/header.scss';
+@import '../scss/slider.scss';

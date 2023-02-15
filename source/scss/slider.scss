@@ -1,0 +1,84 @@
+@mixin FontsizeFontWeightLineheightColor ($fs, $fw, $lh, $c) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $c;
+
+}
+
+@mixin WidthHeight ($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+.slider {
+    padding: 0 0 226px 0;
+    width: 100%;
+    display: flex;
+    // flex-direction: column;
+    box-sizing: border-box;
+    background: url('/img/main_background1.png') no-repeat 70% 60% ;
+    
+
+    &__info {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 0 0px 0 0;
+        // width: 40%;
+        flex: 0 1 calc(933px / 1920px * 100%);
+
+        h1 {
+            @include FontsizeFontWeightLineheightColor(64px, 600, 75px, #424242)
+        }
+        
+
+        span {}
+
+        .slider_woodenhouse {
+            color: #8B9D83;
+        }
+    }
+
+&_text{
+    .slider-comments {
+        display: block;
+        padding-top:32px;
+    }
+}
+    &_buttons {
+        display: flex;
+        a{
+            margin-left: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include WidthHeight(81px,81px );
+            background-color:#8B9D83;
+            border-radius: 50%;
+        //   background-image: url(/img/instagram.png);
+            color:white;
+            // @include FontsizeFontWeightLineheightColor(16px,400 ,18px ,white )
+      
+        }
+     
+    }
+
+    &__items {
+        display: flex;
+        flex: 1 1 35%;
+        img{
+            // width:100%;
+            // height:100%;
+        }
+    }
+
+    &_item {}
+
+    &_arrow {}
+
+.arrow-item{
+padding-top: 250px;
+}
+
+}

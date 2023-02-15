@@ -1,0 +1,71 @@
+
+@mixin FontsizeFontWeightLineheightColor ($fs,$fw,$lh,$c) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $c;
+
+}
+@mixin WidthHeight ($w,$h) {
+    width: $w;
+    height: $h;
+}
+
+.container__header {
+    margin-bottom: 97px;
+    width:100%;
+    height: auto;
+}
+.header {
+    display:flex;
+    align-items: center;
+    height:160px;
+    width:100%;
+
+    &__logo {
+        flex: 0 0 264px;
+        // margin: 0 176px 0 0;
+    }
+
+    &__menu {
+        flex: 0 0 674px;
+        padding: 0 0px 0 60px;
+        display: flex;
+        @include FontsizeFontWeightLineheightColor(24px,400 ,28.13px ,#424242 );
+    }
+
+  
+.menu {
+
+    &_item {
+        margin: 0 60px 0 0;
+    }
+    &_item:last-child {
+        margin: 0 0px 0 0;
+    }
+}
+
+&__info{
+    flex: 1 0 auto;
+    padding-left: 512px;
+// flex-direction: raw;
+ display: flex;
+//  flex: 0 0 548px;
+}
+.header {
+
+    &__phone-img {
+        // padding-left: 250px;
+    }
+
+    &__phone {
+        // display: block;
+        @include FontsizeFontWeightLineheightColor(24px,400 ,28.13px ,#424242 );
+padding: 0 19px;
+    }
+
+    &__search {
+        // display: block;
+    }
+}
+}
