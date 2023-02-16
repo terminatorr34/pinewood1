@@ -26,16 +26,19 @@
     }
     
 .container {
-    width: 1920px;
+    // max-width: 1920px;
+    overflow: hidden;
     height:auto;
     background-color: #F3F4F0;
     padding: 0 90px;
+    flex: 1 1 1920px;
 
 }
-.wrapper{
-    max-width:100%;
-    height:auto;
-}
+// .wrapper{
+//     width:100%;
+//     height:auto;
+//     flex: 1 1 auto;
+// }
 
 
 
