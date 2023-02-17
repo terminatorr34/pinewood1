@@ -1,0 +1,100 @@
+@mixin FontsizeFontWeightLineheightColor ($fs, $fw, $lh, $c) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $c;
+
+}
+
+@mixin WidthHeight ($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+.steps-work {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 433px 0;
+    background: url('/img/step_background.svg') no-repeat 100% 110%;
+    
+
+    &_title {
+        padding: 0 0 66px 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        h2 {
+            
+            // display: block;
+            flex: 1 0 50%;
+            // width: 563px;
+        }
+
+        span {
+            // display: block;
+            min-width: 50%;
+            flex: 1 1 50%;
+
+        }
+    }
+}
+
+.steps-work {
+    
+    height:auto;
+
+    &_steps {
+        max-width:100%;
+    }
+
+    &_number {
+        // display: block;
+        // width: 40px;
+        @include FontsizeFontWeightLineheightColor(70px,600 ,82px ,#8B9D83
+        )
+    }
+
+    &_text {
+        display: flex;
+        flex-direction: column;
+        padding-left: 57px;
+        // align-items: center;
+        
+        // width: 10%;
+        h3{
+            padding: 0 0 15px 0;
+            display: flex;
+            @include FontsizeFontWeightLineheightColor(32px,400 ,37.5px ,#424242
+            );
+        }
+        span{display: flex;
+            @include FontsizeFontWeightLineheightColor(18px,400 ,21px ,#424242
+            )
+        }
+    }
+
+        
+}
+
+
+.steps-work {
+    max-width:100%;
+    height:100vh;
+
+    &_wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 30%);
+        grid-template-rows: repeat(2, minmax(max-content, auto));
+        gap: 100px 50px;
+    }
+
+}
+.steps-work_steps_step{
+    display: flex;
+    align-items: center;    
+}
+
+
+

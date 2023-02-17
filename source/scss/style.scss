@@ -24,6 +24,9 @@
         border-radius: 20px;
         @include FontsizeFontWeightLineheightColor(16px,400 ,18px ,white )
     }
+    .h3style { // заголовки h3 Прозрачный и понятный процесс работы
+        @include FontsizeFontWeightLineheightColor(48px,600 ,56.25px ,#424242 );
+    }
     
 .container {
     // max-width: 1920px;
@@ -44,3 +47,4 @@
 
 @import '../scss/header.scss';
 @import '../scss/slider.scss';
+@import '../scss/steps.scss';

@@ -11,128 +11,135 @@
 
 <body>
     <div class="container">
-       
-            <div class="container__header">
-                <div class="header">
-                    <a href="" class="header__logo">
-                        <img src="img/logo.png" alt="">
-                        <nav class="header__menu">
-                            <div class="menu_item">Проекты</div>
-                            <div class="menu_item">Услуги</div>
-                            <div class="menu_item">Цены</div>
-                            <div class="menu_item">О нас</div>
-                            <div class="menu_item">Конакты</div>
-                        </nav>
-                    </a>
-                    
-                    <div class="header__info">
-                        <img class="header__phone-img" src="/img/phone.png" alt="">
-                        <div class="header__phone">+7 777 777 777</div>
-                        <div class="header__search"><img src="/img/search.png" alt=""></div>
-                    </div>
+
+        <div class="container__header">
+            <div class="header">
+                <a href="" class="header__logo">
+                    <img src="img/logo.png" alt="">
+                    <nav class="header__menu">
+                        <div class="menu_item">Проекты</div>
+                        <div class="menu_item">Услуги</div>
+                        <div class="menu_item">Цены</div>
+                        <div class="menu_item">О нас</div>
+                        <div class="menu_item">Конакты</div>
+                    </nav>
+                </a>
+
+                <div class="header__info">
+                    <img class="header__phone-img" src="/img/phone.png" alt="">
+                    <div class="header__phone">+7 777 777 777</div>
+                    <div class="header__search"><img src="/img/search.png" alt=""></div>
                 </div>
             </div>
-            <div class="slider">
-                <div class="slider__info">
-                    <div class="slider_text">
-                        <h1>Отделка <br> <span class="slider_woodenhouse"> деревянных домов</span> <br> в Москве и
-                            области</h1>
-                        <span class="comments slider-comments">с оптимизацией сметы до 30%
-                            <br>и гарантией до 15 лет</span>
-                    </div>
-                    <div class="slider_buttons">
-                        <button class="allbuttons"> РАССЧИТАТЬ СТОИМОСТЬ РАБОТ</button>
-                        <a href=""><img src="/img/instagram.png" alt=""></a>
-                    </div>
+        </div>
+        <div class="slider">
+            <div class="slider__info">
+                <div class="slider_text">
+                    <h1>Отделка <br> <span class="slider_woodenhouse"> деревянных домов</span> <br> в Москве и
+                        области</h1>
+                    <span class="comments slider-comments">с оптимизацией сметы до 30%
+                        <br>и гарантией до 15 лет</span>
                 </div>
-                <div class="slider-container">
-                    <div class="slider__items">
-                        <img src="/img/slider1.png" alt="" class="slider_item">
-                        <img src="/img/slider2.png" alt="" class="slider_item">
-                        <img src="/img/slider3.png" alt="" class="slider_item">
+                <div class="slider_buttons">
+                    <button class="allbuttons"> РАССЧИТАТЬ СТОИМОСТЬ РАБОТ</button>
+                    <a href=""><img src="/img/instagram.png" alt=""></a>
+                </div>
+            </div>
 
-                    </div>
-                </div>
-                <div class="slider_arrow">
-                    <img src="/img/slider-arrow.png" alt="" class="arrow-item">
+            <div class="slider-container">
+                <div class="slider__items">
+                    <img src="/img/slider1.png" alt="" class="slider_item">
+                    <img src="/img/slider2.png" alt="" class="slider_item">
+                    <img src="/img/slider3.png" alt="" class="slider_item">
 
                 </div>
+            </div>
 
+            <div class="slider_arrow">
+                <img src="/img/slider-arrow.png" alt="" class="arrow-item">
 
             </div>
-            <section class="6steps-work">
-                <h2>Прозрачный и понятный
+
+
+        </div>
+        <section class="steps-work">
+            <div class="steps-work_title">
+                <h2 class="h3style">Прозрачный и <br> понятный <br>
                     процесс работы</h2>
-                <span>Вы будете получать фото и видео
+                <span class="comments">Вы будете получать фото и видео <br>
                     отчеты на всем протяжении работы</span>
-                <div class="6steps-work_steps">
-                    <div class="6steps-work_steps_step">
-                        <div class="6steps-work_number"></div>
-                        <div class="6steps-work_text">
+            </div>
+
+            <div class="steps-work_steps">
+                <div class="steps-work_wrapper">
+                    <div class="steps-work_steps_step">
+                        <div class="steps-work_number">1</div>
+                        <div class="steps-work_text">
                             <h3>Заявка</h3>
-                            <span>Вы оставляете заявку на сайте или звоните нам по телефону</span>
+                            <span>Вы оставляете заявку на сайте <br>или звоните нам по телефону</span>
                         </div>
                     </div>
-                    <div class="6steps-work_steps_step">
-                        <div class="6steps-work_number"></div>
-                        <div class="6steps-work_text">
+                    <div class="steps-work_steps_step">
+                        <div class="steps-work_number">2</div>
+                        <div class="steps-work_text">
                             <h3>Выезд на объект</h3>
-                            <span>В удобное для вас время специалист приезжает на объект для замера и просчета</span>
+                            <span>В удобное для вас время специалист приезжает<br> на объект для замера и просчета</span>
                         </div>
                     </div>
-                    <div class="6steps-work_steps_step">
-                        <div class="6steps-work_number"></div>
-                        <div class="6steps-work_text">
+                    <div class="steps-work_steps_step">
+                        <div class="steps-work_number">3</div>
+                        <div class="steps-work_text">
                             <h3>Согласование сметы</h3>
-                            <span>Перед началом работ вы знаете точную стоимость и сроки всех услуг</span>
+                            <span>Перед началом работ вы знаете <br>точную стоимость и сроки всех услуг</span>
                         </div>
                     </div>
-                    <div class="6steps-work_steps_step">
-                        <div class="6steps-work_number"></div>
-                        <div class="6steps-work_text">
+                    <div class="steps-work_steps_step">
+                        <div class="steps-work_number">4</div>
+                        <div class="steps-work_text">
                             <h3>Заключение договора</h3>
-                            <span>Вы заключаете официальный договор, где прописаны все наши обязательства</span>
+                            <span>Вы заключаете официальный договор,<br> где прописаны все наши обязательства</span>
                         </div>
                     </div>
-                    <div class="6steps-work_steps_step">
-                        <div class="6steps-work_number"></div>
-                        <div class="6steps-work_text">
+                    <div class="steps-work_steps_step">
+                        <div class="steps-work_number">5</div>
+                        <div class="steps-work_text">
                             <h3>Процесс работы</h3>
-                            <span>Мы выполняем работы, присылаем отчеты, а вы частями оплачиваете каждый принятый
+                            <span>Мы выполняем работы, присылаем отчеты,<br> а вы частями оплачиваете каждый принятый
                                 этап</span>
                         </div>
                     </div>
-                    <div class="6steps-work_steps_step">
-                        <div class="6steps-work_number"></div>
-                        <div class="6steps-work_text">
+                    <div class="steps-work_steps_step">
+                        <div class="steps-work_number">6</div>
+                        <div class="steps-work_text">
                             <h3>Сдача проекта</h3>
-                            <span>Все работы проверяет отдел по контролю качества и только после этого вы принимаете
+                            <span>Все работы проверяет отдел по контролю <br>качества и только после этого вы принимаете
                                 объект</span>
                         </div>
                     </div>
                 </div>
-            </section>
-            <div class="projects">
-                <div class="projects__info">
-                    <h2>Более 130 выполненых проектов
-                        по всей Москве и области</h2>
-                    <span>По предварительной записи, Вы можете посетить объект, который уже готов или находится в
-                        процессе отделки</span>
-                </div>
-                <div class="projects__slider">
-
-                </div>
-                <div class="projects__buttons">
-                    <button>загрузить еще</button>
-                    <button class="projects_arrow-left"></button>
-                    <button class="projects_arrow-right"></button>
-
-                </div>
             </div>
-       
+        </section>
+        <div class="projects">
+            <div class="projects__info">
+                <h2>Более 130 выполненых проектов
+                    по всей Москве и области</h2>
+                <span>По предварительной записи, Вы можете посетить объект, который уже готов или находится в
+                    процессе отделки</span>
+            </div>
+            <div class="projects__slider">
+
+            </div>
+            <div class="projects__buttons">
+                <button>загрузить еще</button>
+                <button class="projects_arrow-left"></button>
+                <button class="projects_arrow-right"></button>
+
+            </div>
+        </div>
+
     </div>
 
-<script src="/js/main.js"></script>
+    <script async src="/js/main.js"></script>
 </body>
 
 </html>
