@@ -1,0 +1,8 @@
+.secondSlider-container {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: fit-content(8.5%) fit-content(73%) fit-content(8.5%);
+  grid-template-columns: fit-content(8.5%) fit-content(73%) fit-content(8.5%);
+}

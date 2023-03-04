@@ -1,0 +1,34 @@
+@mixin FontsizeFontWeightLineheightColor ($fs, $fw, $lh, $c) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $c;
+
+}
+
+@mixin WidthHeight ($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+.projects {
+    height:auto;
+    display: flex;
+
+    &__info {
+        justify-content: flex-start;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+h2{
+    // display: inline-block;
+flex: 1 1 40%;  
+padding: 0 141px 0 0;  
+}
+.projects_span{
+    display: block;
+    padding: 0 309px 0 0;
+    flex: 1 1 40%;
+}
+    }
+}
