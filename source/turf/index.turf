@@ -128,25 +128,17 @@
                     готов или находится в
                     процессе отделки</span>
             </div>
-            <div class="projects__slider">
-
-            </div>
-            <!-- <div class="projects__buttons">
-                <button>загрузить еще</button>
-                <button class="projects_arrow-left"></button>
-                <button class="projects_arrow-right"></button>
-
-            </div> -->
         </div>
         <div class="secondSlider-container">
-            <div class="secondSlider_arrow"> <img src="/img/arrow_bak_ios_24px.png" class="arrow-right"></div>
+            <div class="slider_arrow secondSlider_arrow"> <img src="/img/arrow_bak_ios_24px.png" class="arrow-right">
+            </div>
             <div class="secondSliderLine">
                 <div class="secondSlider__items">
                     <div class="secondSlider_item">
                         <img class="secondSlider_img" src="/img/2slider1.png" alt="">
                         <div class="secondSlider_item_secondSlider-info">
-                            <span>КП золотые сосны</span>
-                            <div class="secondSlider_item_button">
+                            <span class="titleSlider">КП золотые сосны</span>
+                            <div class="slider_item_button">
                                 <a href="">Смотреть проект</a>
                                 <img class="mini-arrow" src="/img/mini-arrow.png" alt="">
                             </div>
@@ -155,8 +147,8 @@
                     <div class="secondSlider_item">
                         <img class="secondSlider_img" src="/img/2slider2.png" alt="">
                         <div class="secondSlider_item_secondSlider-info">
-                            <span>КП золотые сосны 290 </span>
-                            <div class="secondSlider_item_button">
+                            <span class="titleSlider">КП золотые сосны 290 </span>
+                            <div class="slider_item_button">
                                 <a href="">Смотреть проект</a>
                                 <img class="mini-arrow" src="/img/mini-arrow.png" alt="">
                             </div>
@@ -165,8 +157,8 @@
                     <div class="secondSlider_item">
                         <img class="secondSlider_img" src="/img/2slider1.png" alt="">
                         <div class="secondSlider_item_secondSlider-info">
-                            <span>КП золотые сосны</span>
-                            <div class="secondSlider_item_button">
+                            <span class="titleSlider">КП золотые сосны</span>
+                            <div class="slider_item_button">
                                 <a href="">Смотреть проект</a>
                                 <img class="mini-arrow" src="/img/mini-arrow.png" alt="">
                             </div>
@@ -175,8 +167,8 @@
                     <div class="secondSlider_item">
                         <img class="secondSlider_img" src="/img/2slider2.png" alt="">
                         <div class="secondSlider_item_secondSlider-info">
-                            <span>КП золотые сосны 290 </span>
-                            <div class="secondSlider_item_button">
+                            <span class="titleSlider">КП золотые сосны 290 </span>
+                            <div class="slider_item_button">
                                 <a href="">Смотреть проект</a>
                                 <img class="mini-arrow" src="/img/mini-arrow.png" alt="">
                             </div>
@@ -184,15 +176,191 @@
                     </div>
                 </div>
             </div>
-            <div class="secondSlider_arrow"> <img src="/img/arrow_forward_ios_24px.png" class="arrow-right"></div>
+            <div class="slider_arrow secondSlider_arrow"> <img src="/img/arrow_forward_ios_24px.png"
+                    class="arrow-right"></div>
             <div class="secondSlider_bottom-button">
                 <a href="#">смотреть все проекты</a>
+            </div>
+        </div>
+        <div class="services">
+            <div class="h3style services__title">
+                Предоставляем <br> <span style="color:#8B9D83"> широкий спектр услуг</span>
+            </div>
+            <div class="comments services__text">
+                <span>Несем ответственность<br> и предоставляем гарантию, <br>
+                    прописанную в официальном договоре</span>
+            </div>
+        </div>
+        <div class="thirdSlider-container">
+            <div class="slider_arrow thirdSlider_arrow"> <img src="/img/arrow_bak_ios_24px.png" class="arrow-right">
+            </div>
+            <div class="thirdSlider-sliderLine">
+                <div class="thirdSlider__items">
+                    <div class="thirdSlider_item">
+                        <img class="thirdSlider_img" src="/img/3slider1.png" alt="">
+                        <div class="thirdSlider_item_thirdSlider-info">
+                            <h5 class="titleSlider">Шлифовка</h5>
+                            <span>Подготовка дома к покраске
+                                и увеличение срока службы каркаса</span>
+                            <div class="slider_item_button third_button">
+                                <a href="">Смотреть проект</a>
+                                <img class="mini-arrow" src="/img/mini-arrow.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="thirdSlider_item">
+                        <img class="thirdSlider_img" src="/img/3slider1.png" alt="">
+                        <div class="thirdSlider_item_thirdSlider-info">
+                            <h5 class="titleSlider">Шлифовка</h5>
+                            <span>Подготовка дома к покраске
+                                и увеличение срока службы каркаса</span>
+                            <div class="slider_item_button third_button">
+                                <a href="">Смотреть проект</a>
+                                <img class="mini-arrow" src="/img/mini-arrow.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="thirdSlider_item">
+                        <img class="thirdSlider_img" src="/img/3slider1.png" alt="">
+                        <div class="thirdSlider_item_thirdSlider-info">
+                            <h5 class="titleSlider">Шлифовка</h5>
+                            <span>Подготовка дома к покраске
+                                и увеличение срока службы каркаса</span>
+                            <div class="slider_item_button third_button">
+                                <a href="">Смотреть проект</a>
+                                <img class="mini-arrow" src="/img/mini-arrow.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="thirdSlider_item">
+                        <img class="thirdSlider_img" src="/img/3slider1.png" alt="">
+                        <div class="thirdSlider_item_thirdSlider-info">
+                            <h5 class="titleSlider">Шлифовка</h5>
+                            <span>Подготовка дома к покраске
+                                и увеличение срока службы каркаса</span>
+                            <div class="slider_item_button third_button">
+                                <a href="">Смотреть проект</a>
+                                <img class="mini-arrow" src="/img/mini-arrow.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="thirdSlider_item">
+                        <img class="thirdSlider_img" src="/img/3slider1.png" alt="">
+                        <div class="thirdSlider_item_thirdSlider-info">
+                            <h5 class="titleSlider">Шлифовка</h5>
+                            <span>Подготовка дома к покраске
+                                и увеличение срока службы каркаса</span>
+                            <div class="slider_item_button third_button">
+                                <a href="">Смотреть проект</a>
+                                <img class="mini-arrow" src="/img/mini-arrow.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="thirdSlider_item">
+                        <img class="thirdSlider_img" src="/img/3slider1.png" alt="">
+                        <div class="thirdSlider_item_thirdSlider-info">
+                            <h5 class="titleSlider">Шлифовка</h5>
+                            <span>Подготовка дома к покраске
+                                и увеличение срока службы каркаса</span>
+                            <div class="slider_item_button third_button">
+                                <a href="">Смотреть проект</a>
+                                <img class="mini-arrow" src="/img/mini-arrow.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="thirdSlider_item">
+                        <img class="thirdSlider_img" src="/img/3slider1.png" alt="">
+                        <div class="thirdSlider_item_thirdSlider-info">
+                            <h5 class="titleSlider">Шлифовка</h5>
+                            <span>Подготовка дома к покраске
+                                и увеличение срока службы каркаса</span>
+                            <div class="slider_item_button third_button">
+                                <a href="">Смотреть проект</a>
+                                <img class="mini-arrow" src="/img/mini-arrow.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="thirdSlider_item">
+                        <img class="thirdSlider_img" src="/img/3sliderlast.png" alt="">
+                        <div class="thirdSlider_item_thirdSlider-info">
+                            <h5 class="titleSlider">Шлифовка</h5>
+                            <span>Подготовка дома к покраске
+                                и увеличение срока службы каркаса</span>
+                            <div class="slider_item_button third_button">
+                                <a href="">Смотреть проект</a>
+                                <img class="mini-arrow" src="/img/mini-arrow.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="slider_arrow thirdSlider_arrow"> <img src="/img/arrow_forward_ios_24px.png" class="arrow-right">
+            </div>
+        </div>
+        <div class="questions">
+            <div class="h3style question__title">
+                Ответьте на <span style="color:#8B9D83">5 простых вопросов</span> <br>
+                и получите расчеты по вашему объекту
+            </div>
+            <!-- слайдер-контейнер для формы question -->
+            <div class="fourthSlider-sliderLine">
+                <div class="fourthSlider_items"> <!-- слайдер кторый анимируем по transiption-->
+                    <div class="fourtSlider_item"> <!-- первый слайд из 5-->
+                        <div class="fourthSlider_item-left"> <!-- левая часть слайда , форма кнопки, фоновая картинка-->
+                            <span class="comments item-left_text">Вопрос 1 / 5 </span>
+                            <h3 class="h3style item-left_title">Укажите площадь дома:</h3>
+                            <div class="fourthSlider_form">
+                                <form action="#" class="fourthSlider-sliderLine_form">
+                                    <input type="text" placeholder="500m3" name="square">
+                                    <div class="fourthSlider_buttons">
+                                        <button class="slider_item_button fourthSlider_button-back">Назад</button>
+                                        <button class="slider_item_button fourthSlider_button-forward">Далее</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div> <!-- Левый блок слайда -->
+                        <div class="fourthSlider_item-right">
+                            <div class="fourthSlider_item-right_manager-name">
+                                <img src="/img/questions_slider/photo.png" alt="">
+                                <span>Иванов Борис <br> <span class="comments">Инженер проектов </span> </span>
+                            </div>
+                            <div>
+                                <span class="comments">Здравствуйте, меня зовут Борис, и я помогу Вам понять, какой
+                                    бюджет нужен для отделки вашего дома под ключ</span>
+                                <h4>Ответив на вопросы, Вы получите</h4>
+                            </div>
+                            <div class="fourthSlider_item-right_price">
+                                <img src="/img/questions_slider/price.png" alt="">
+                                <span class="comments">Ориентировочную стоимость</span>
+                            </div>
+                            <div class="fourthSlider_item-right_price">
+                                <img src="/img/questions_slider/quotation.png" alt="">
+                                <span class="comments">Точную подборку проектов, исходя из ваших ответов,
+                                    либо предложим новый вариант</span>
+                            </div>
+                            <div class="fourthSlider_item-right_price">
+                                <img src="/img/questions_slider/gifts.png" alt="">
+                                <span class="comments">Один из 3-х подарков
+                                    при заказе отделки у нас</span>
+                            </div>
+                        </div> <!-- Правый блок слайда -->
+                    </div>
+                </div>
             </div>
         </div>
 
     </div>
 
-    <script type ="module"  src="/js/main.js"></script>
+    <script type="module" src="/js/main.js"></script>
     <!-- <script async src="/js/secondslider.js"></script> -->
 </body>
 

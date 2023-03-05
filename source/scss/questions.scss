@@ -1,0 +1,120 @@
+@mixin FontsizeFontWeightLineheightColor ($fs, $fw, $lh, $c) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $c;
+
+}
+
+@mixin WidthHeight ($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+.question__title {
+    padding: 0px 0 72px 0;
+}
+
+.fourthSlider-sliderLine {
+    // ограничивающий контейнер для блока
+    width: 100%;
+    height: auto;
+    display: flex;
+    border: 3px solid #8B9D83;
+    padding: 61px 52px;
+    margin-bottom: 100px;
+    background-color: #F5F1EC;
+}
+
+.fourtSlider {
+
+    &_items {
+        //слайдео, котоый анимируем на transition
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+
+    }
+
+    &_item {
+        // блок слайдер состоящий из левой и правой секции
+        display: flex;
+        // flex-direction: column;
+        width: 100%;
+
+    }
+}
+
+.fourthSlider {
+
+    &_item-left {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 calc(1038 / 1740*100%);
+        border-right: 2px solid white;
+    }
+
+    &_item-right {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 calc(692 / 1740*100%)
+    }
+}
+
+.item-left_text {
+    padding: 64px 0 57px 0;
+    
+}
+
+.item-left_title {
+    padding: 58px 0 58px 0;
+
+}
+
+.fourthSlider {}
+
+
+.fourthSlider_form {
+    height: calc(500/609 * 100%);
+    // background-color: aquamarine;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+}
+
+.fourthSlider-sliderLine_form {
+    background: url('/img/questions_slider/background_slider_questions.png') no-repeat 80%;
+    background-size: 50%;
+    height: 100%;
+    // align-items: center;
+  
+   [type="text"] {
+    // padding: 5px 10px;
+    width: 30%;
+    height: 75px;
+    border: 2px solid #b5b3b0;
+    border-radius: 20px;
+    
+    
+}
+}
+.fourthSlider_buttons {
+    display: flex;
+    justify-content: flex-start;
+}
+.fourthSlider_button-back {
+    height:62px;
+    width: calc(195/1042 * 100%);
+    background-color: white;
+    border: 2px solid #b5b3b0;
+    margin: 0 46px 0 0;
+}
+.fourthSlider_button-forward {
+    color: white;
+    height:62px;
+    width: calc(195/1042 * 100%);
+}
