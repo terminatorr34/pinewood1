@@ -1,0 +1,87 @@
+
+@mixin FontsizeFontWeightLineheightColor ($fs,$fw,$lh,$c) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $c;
+
+}
+@mixin WidthHeight ($w,$h) {
+    width: $w;
+    height: $h;
+}
+
+footer{
+    // padding: 0 90px;
+}
+.footer {
+    &__container {
+        padding: 177px 0px 98px 133px;
+        // max-width:1920px;
+        border: 3px solid #8B9D83;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &_info {
+        @include FontsizeFontWeightLineheightColor(14px,400 ,16px ,#424242
+        );
+        padding: 14px 0 38px 0;
+    }
+
+    &_requisites {
+        @include FontsizeFontWeightLineheightColor(16px,400 ,19px ,#A49B9B )
+    }
+
+
+    &__menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        &_item {
+        }
+    }
+
+    
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        &_details {
+            padding: 0 0 16px 0;
+            display: flex;
+            img {
+                margin-right: 37px;
+            }
+        }
+        &_details:first-child {
+            margin-right:150px;
+            img {
+                margin-right: 37px;
+            }
+        }
+        &_details:nth-child(2) {
+            margin-right:40px;
+            img {
+                margin-right: 37px;
+            }
+        }
+        &_details:last-child {
+            
+            img {
+                height:27px;
+                flex: 0 0 24px;
+            }
+        }
+
+     
+    }
+}

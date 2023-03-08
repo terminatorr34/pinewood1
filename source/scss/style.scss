@@ -1,4 +1,3 @@
-
 @import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900);
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,regular);
 @import '../scss/null.scss';
@@ -16,30 +15,46 @@
     width: $w;
     height: $h;
 }
+
 // ОБЩИЕ КЛАССЫ ДЛЯ ВСЕГО ПРОЕКТА
 .comments {
-    @include FontsizeFontWeightLineheightColor(28px,400 ,32.81px ,#424242 );
-    }
-    .allbuttons{
-        @include WidthHeight(323px,81px );
-        background-color:#8B9D83;
-        border-radius: 20px;
-        @include FontsizeFontWeightLineheightColor(16px,400 ,18px ,white )
-    }
-    .h3style { // заголовки h3 Прозрачный и понятный процесс работы
-        @include FontsizeFontWeightLineheightColor(48px,600 ,56.25px ,#424242 );
-        font-family: inherit;
-    }
-    
+    @include FontsizeFontWeightLineheightColor(28px, 400, 32.81px, #424242);
+}
+
+.allbuttons {
+    @include WidthHeight(323px, 81px);
+    background-color: #8B9D83;
+    border-radius: 40px;
+    @include FontsizeFontWeightLineheightColor(16px, 400, 18px, white)
+}
+
+.h3style {
+    // заголовки h3 Прозрачный и понятный процесс работы
+    @include FontsizeFontWeightLineheightColor(48px, 600, 56.25px, #424242);
+    font-family: inherit;
+}
+
+.description {
+    @include FontsizeFontWeightLineheightColor(24px, 400, 28px, #424242);
+
+}
+
 .container {
     // max-width: 1920px;
     overflow: hidden;
-    height:auto;
+    height: auto;
     background-color: #F3F4F0;
-    padding: 0 90px;
+    // padding: 0 90px;
     flex: 1 1 1920px;
 
 }
+
+@media (max-width:1401px) {
+    .container {
+        flex: 1 1 1400px;
+    }
+}
+
 // .wrapper{
 //     width:100%;
 //     height:auto;
@@ -47,6 +62,7 @@
 // }
 //стили для боковых стрелок в слайдерах
 .slider_arrow {
+    margin-left: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,14 +73,16 @@
     box-shadow: 2px 2px 10px rgb(119, 117, 117);
     transition: all 0.3s ease;
 }
+
 .slider_arrow:active {
     width: 80px;
     height: 80px;
     background-color: #dfe4dd;
     transition: all 0.3s ease;
 }
+
 .slider_arrow:hover {
-   cursor: pointer;
+    cursor: pointer;
 }
 
 // стили для кнопки в слайдере смотреть проект -> , а также для наименования в слайдере КП золотые сосны
@@ -89,6 +107,29 @@
     }
 
 }
+
+.secondSlider_bottom-button_general {
+    margin-top: 55px;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    // justify-self: center;
+    justify-content: center;
+    width: 297px;
+    height: 63px;
+    border: 2px solid #8B9D83;
+    border-radius: 78px;
+
+    a {
+        color: #686656;
+        display: block
+    }
+
+    grid-column-start: 2;
+    // grid-column-end: -1;
+
+}
+
 .titleSlider {
     width: 50%;
     @include FontsizeFontWeightLineheightColor(20px, 400, 23px, #424242)
@@ -103,3 +144,6 @@
 @import '../scss/secondSlider.scss';
 @import '../scss/thirdSlider.scss';
 @import '../scss/questions.scss';
+@import '../scss/footer.scss';
+@import '../scss/media/media1400.scss';
+@import '../scss/media/media.scss';

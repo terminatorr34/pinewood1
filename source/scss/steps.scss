@@ -26,10 +26,8 @@
         justify-content: flex-start;
 
         h2 {
-            
-            // display: block;
             flex: 1 0 50%;
-            // width: 563px;
+            padding-right: 250px;
         }
 
         span {
@@ -81,13 +79,15 @@
 
 .steps-work {
     max-width:100%;
-    height:100vh;
+    // height:100vh;
+    padding: 0 90px;
 
     &_wrapper {
         display: grid;
         grid-template-columns: repeat(auto-fill, 30%);
         grid-template-rows: repeat(2, minmax(max-content, auto));
         gap: 100px 50px;
+        
     }
 
 }

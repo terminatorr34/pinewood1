@@ -12,6 +12,7 @@
 }
 
 .projects {
+    padding: 0 90px;
     height:auto;
     display: flex;
 
@@ -21,7 +22,6 @@
         display: flex;
         align-items: center;
 h2{
-    // display: inline-block;
 flex: 1 1 40%;  
 padding: 0 141px 0 0;  
 }

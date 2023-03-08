@@ -10,6 +10,9 @@
     width: $w;
     height: $h;
 }
+.questions {
+    padding: 0 90px;
+}
 
 .question__title {
     padding: 0px 0 72px 0;
@@ -21,7 +24,7 @@
     height: auto;
     display: flex;
     border: 3px solid #8B9D83;
-    padding: 61px 52px;
+    padding: 30px 52px;
     margin-bottom: 100px;
     background-color: #F5F1EC;
 }
@@ -54,16 +57,12 @@
         border-right: 2px solid white;
     }
 
-    &_item-right {
-        display: flex;
-        flex-direction: column;
-        flex: 1 1 calc(692 / 1740*100%)
-    }
+
 }
 
 .item-left_text {
     padding: 64px 0 57px 0;
-    
+
 }
 
 .item-left_title {
@@ -81,9 +80,10 @@
     form {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content:space-between;
+        max-height: 600px;
     }
-    
+
 }
 
 .fourthSlider-sliderLine_form {
@@ -91,30 +91,78 @@
     background-size: 50%;
     height: 100%;
     // align-items: center;
-  
-   [type="text"] {
-    // padding: 5px 10px;
-    width: 30%;
-    height: 75px;
-    border: 2px solid #b5b3b0;
-    border-radius: 20px;
-    
-    
+
+    [type="text"] {
+        // padding: 5px 10px;
+        width: 30%;
+        height: 75px;
+        border: 2px solid #b5b3b0;
+        border-radius: 20px;
+
+
+    }
 }
-}
+
 .fourthSlider_buttons {
     display: flex;
     justify-content: flex-start;
 }
+
 .fourthSlider_button-back {
-    height:62px;
+    height: 62px;
     width: calc(195/1042 * 100%);
     background-color: white;
     border: 2px solid #b5b3b0;
     margin: 0 46px 0 0;
 }
+
 .fourthSlider_button-forward {
     color: white;
-    height:62px;
+    height: 62px;
     width: calc(195/1042 * 100%);
+}
+
+.fourthSlider_item-right {
+    padding: 0 0px 0 64px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(692 / 1740*100%)
+}
+
+.fourthSlider_item-right_manager-name {
+    display: flex;
+    padding: 0 0 0 0px;
+    margin: 0 0 51px 0px;
+align-items: center;
+    h4 {
+        padding: 0 0 0 41px;
+        @include FontsizeFontWeightLineheightColor(40px, 600, 47px, #424242)
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        span{
+            padding: 13px 0 0 41px;
+            @include FontsizeFontWeightLineheightColor(24px,400 ,28px ,#424242 );
+        }
+    }
+
+}
+.fourthSlider_item-right_hello {
+    @include FontsizeFontWeightLineheightColor(28px,400 ,32.81px ,#424242 );
+    padding: 0px 0px 52px 0;
+h4{
+    padding: 52px 0 0 0 ;
+    @include FontsizeFontWeightLineheightColor(32px,600 ,38px ,#424242 )
+
+}
+}
+
+.fourthSlider_item-right_price {
+    padding: 0 0 30px 0;
+    display: flex;
+    align-items: center;
+    img{ 
+        margin: 0 31px 0 0 ;
+    }
 }

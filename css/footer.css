@@ -1,0 +1,7 @@
+.footer__container {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: fit-content(25%) fit-content(25%) fit-content(50%);
+  grid-template-columns: fit-content(25%) fit-content(25%) fit-content(50%);
+}

@@ -1,0 +1,9 @@
+@media (max-width: 744px) {
+  .header__burger {
+    display: block;
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+  }
+}

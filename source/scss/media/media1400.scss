@@ -1,0 +1,567 @@
+@mixin FontsizeFontWeightLineheightColor ($fs, $fw, $lh, $c) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $c;
+
+}
+
+@mixin WidthHeight ($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+//header
+@media (max-width: 1401px) {
+
+    .container__header {
+        padding: 0 120px;
+        margin-bottom: 34px;
+        max-width: 100%;
+        height: 139px;
+        // flex: 1 1 auto;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        height: 160px;
+        max-width: 100%;
+        justify-content: space-between;
+
+        &__logo {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex: 1 1 auto;
+
+            img {
+                width: 200px;
+                height: 66px;
+            }
+        }
+
+        &__menu {
+            display: flex;
+            margin: 0 0 0 40px;
+            @include FontsizeFontWeightLineheightColor(20px, 400, 23.13px, #424242);
+        }
+
+        .menu {
+
+            &_item {
+                margin: 0 40px 0 0;
+            }
+
+            &_item:nth-child(4) {
+                width: 62px;
+                margin: 0 40px 0 0;
+                // flex: 1 0 62px;
+            }
+
+            &_item:last-child {
+                margin: 0 0px 0 0;
+            }
+        }
+
+        .header {
+            &__phone-img {
+                width: 25px;
+                height: 24px;
+            }
+
+            &__phone {
+                @include FontsizeFontWeightLineheightColor(20px, 400, 23px, #424242);
+                padding: 0 18px;
+            }
+
+            &__search {
+                display: none;
+            }
+        }
+    }
+}
+
+//header ----------------------------------------------------------------------------------------------------------
+@media (max-width: 1201px) {
+
+    .container__header {
+        padding: 0 70px;
+    }
+
+    .header {
+        &__menu {
+            margin: 0 0 0 10px;
+            @include FontsizeFontWeightLineheightColor(20px, 400, 23.13px, #424242);
+        }
+
+        .menu {
+            &_item {
+                margin: 0 10px 0 0;
+            }
+
+            &_item:nth-child(4) {
+                width: 62px;
+                margin: 0 10px 0 0;
+                // flex: 1 0 62px;
+            }
+
+            &_item:last-child {
+                margin: 0 0px 0 0;
+            }
+        }
+    }
+}
+
+
+// Первый слайдер --------------------------------------------------------------
+
+@media(max-width: 1401px) {
+
+    .slider {
+        padding: 0 120px 201px 120px;
+        flex: 1 1 100%;
+
+        .slider_buttons {
+            a {
+                margin-left: 30px;
+            }
+        }
+
+        &__info {
+
+            h1 {
+                @include FontsizeFontWeightLineheightColor(48px, 600, 56px, #424242)
+            }
+        }
+
+        &_text {
+max-height: 100%;
+            h1 {
+                // padding: 0 0 38px 0;
+            }
+
+            .slider-comments {
+                @include FontsizeFontWeightLineheightColor(24px, 400, 28px, #424242);
+            }
+        }
+
+        // &_arrow {
+        //     width: 10%;
+        //     height: 10%;
+        // }
+
+    }
+
+
+}
+
+@media(max-width: 1201px) {
+    .slider {
+        // padding: 0 60px 50px 60px;
+    }
+.slider-container {
+    flex: 0 0 50%;
+}
+    .slider__info {
+        // justify-content: space-between;
+        h1 {
+            // padding-bottom: 18px;
+            @include FontsizeFontWeightLineheightColor(40px, 600, 46px, #424242)
+        }
+    }
+
+    .slider_buttons {
+        a {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .slider_button_send {
+        width:226px;
+        height:50px;
+        font-size: 12px;
+
+    }
+}
+
+@media(max-width: 1055px) {
+    .slider__info {
+        h1 {
+            padding-bottom: 18px;
+            @include FontsizeFontWeightLineheightColor(34px, 600, 34px, #424242)
+        }
+    }
+
+    .slider_text {
+        @include FontsizeFontWeightLineheightColor(16px, 200, 18px, #424242)
+    }
+
+    .slider_buttons {
+        button {
+
+            font-size: 12px;
+        }
+    }
+}
+
+// Steps -----------------------------------------------------------------------------
+@media (max-width: 1401px) {
+
+    .steps-work {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 120px 216px 120px;
+        background: url('/img/step_background.svg') no-repeat 100% 110%;
+
+
+        &_title {
+            padding: 0 0 90px 0;
+
+            h2 {
+                @include FontsizeFontWeightLineheightColor(36px, 600, 42px, #424242);
+                padding-right: 100px;
+
+            }
+
+            span {
+                @include FontsizeFontWeightLineheightColor(24px, 400, 28px, #424242);
+                min-width: 50%;
+
+            }
+        }
+    }
+
+    .steps-work {
+
+        &_number {
+            @include FontsizeFontWeightLineheightColor(64px, 600, 75px, #8B9D83)
+        }
+
+        &_text {
+            padding-left: 25px;
+
+            h3 {
+                padding: 0 0 15px 0;
+                @include FontsizeFontWeightLineheightColor(24px, 400, 28px, #424242);
+            }
+
+            span {
+
+                @include FontsizeFontWeightLineheightColor(16px, 400, 18px, #424242)
+            }
+        }
+    }
+
+}
+
+// PROJECTS ----------------------------------------------------------------------
+@media (max-width: 1401px) {
+
+    .projects {
+        padding: 0 120px;
+
+        &__info {
+            h2 {
+                @include FontsizeFontWeightLineheightColor(36px, 600, 28px, #424242);
+                padding: 0 10px 0 0;
+                flex: 1 1 50%;
+            }
+
+            .projects_span {
+                @include FontsizeFontWeightLineheightColor(24px, 400, 28px, #424242);
+                padding: 0 70px 0 51px;
+                flex: 1 1 50%;
+            }
+        }
+    }
+}
+
+// SECOND-SLIDER CONTAINER ------------------------------------------------------
+@media (max-width: 1401px) {
+    .secondSlider_arrow{
+        margin: 0 0px;
+    }
+
+    .secondSlider-container {
+        padding: 80px 30px 138px 30px;
+        // общий контенйер
+        gap: 0 0px;
+        grid-template-columns: fit-content(5%) fit-content(100%) fit-content(5%);
+        // align-items: center;
+        // justify-items: center;
+    }
+    .secondSlider_item {
+        margin-left:15px;
+        margin-right:15px;
+    }
+
+    .secondSlider_item_secondSlider-info {
+        justify-content: space-around;
+        padding: 0px 0px;
+    }
+
+    .secondSlider_bottom-button {
+        margin-top: 57px;
+        width: 297px;
+        height: 67px;
+    }
+
+    .secondSlider_item_title {
+        @include FontsizeFontWeightLineheightColor(18px, 400, 21px, #424242);
+        padding: 45px 19px 45px 45px;
+    }
+}
+
+.secondSlider_item_button {
+    width: 36%;
+    height: 50px;
+    padding: 20px;
+    align-items: center;
+
+    a {
+        color: white;
+        @include FontsizeFontWeightLineheightColor(14px, 400, 16px, white)
+    }
+}
+
+
+// THIRDSLIDER -----------------------------------------------------------------------------
+@media (max-width: 1401px) {
+
+    .services {
+        padding: 0 120px 111px 120px;
+
+        &__title {
+            @include FontsizeFontWeightLineheightColor(36px, 600, 42px, #424242);
+            flex: 1 1 50%;
+        }
+
+        &__text {
+            flex: 1 1 50%;
+        }
+    }
+    .thirdSlider-container {
+        column-gap: 0 60px;
+        row-gap: 57px;
+        padding: 0 90px 57px 0;
+    }
+
+    .thirdSlider {
+
+        &__items {
+            padding-right: 30px;
+        }
+
+        &_item {
+            margin-left: 30px;
+        }
+    }
+
+    .thirdSlider_item_thirdSlider-info {
+        
+        h5 {
+            margin: 33px 0 17px 0;
+        }
+
+        span {
+            @include FontsizeFontWeightLineheightColor(16px, 400, 18px, #424242);
+            margin: 0 0 35px 0;
+            padding: 0 36px;
+        }
+    }
+
+}
+.thirdSlider_bottom-button{
+    margin-top: 40px;
+}
+
+@media (max-width:1401px) {
+    .questions {
+        padding: 0 120px;
+    }
+    
+    .question__title {
+        padding: 0px 0 72px 0;
+    }
+    
+    .fourthSlider-sliderLine {
+        // ограничивающий контейнер для блока
+        width: 100B9D83;
+        padding: 46px 43px 50px 43px;
+        margin-bottom: 154px;
+    }
+    
+
+    
+    .item-left_text {
+        padding: 64px 0 57px 0;
+        @include FontsizeFontWeightLineheightColor(20px,400 ,23px ,#424242 );
+    }
+    
+    .item-left_title {
+        padding: 0px 0 26px 0;
+        @include FontsizeFontWeightLineheightColor(32px,600 ,37px ,#424242 );
+    }
+    
+    .fourthSlider-sliderLine_form {
+    
+        [type="text"] {
+            padding: 0px 0px 0 10px;
+        }
+    } 
+    .fourthSlider_button-back {
+        height: 62px;
+        width: 30%;
+        margin: 0 46px 0 0;
+    }
+    
+    .fourthSlider_button-forward {
+        color: white;
+        height: 62px;
+        width: 30%;
+    }
+    
+    .fourthSlider_item-right {
+        padding: 0 0px 0 24px;
+        flex: 1 1 calc(692 / 1740*100%)
+    }
+    
+    .fourthSlider_item-right_manager-name {
+        img {
+            width:128px;
+            height: 128px;
+        }
+        margin: 0 0 51px 0px;
+        h4 {
+            padding: 0 0 0 32px;
+            @include FontsizeFontWeightLineheightColor(32px, 600, 37.5px, #424242)
+        }
+        div{
+            span{
+                padding: 7px 0 0 41px;
+                @include FontsizeFontWeightLineheightColor(20px,400 ,23px ,#424242 );
+            }
+        }
+    
+    }
+    .fourthSlider_item-right_hello {
+        @include FontsizeFontWeightLineheightColor(20px,400 ,23px ,#424242 );
+        padding: 0px 0px 32px 0;
+    h4{
+        padding: 52px 0 0 0 ;
+        @include FontsizeFontWeightLineheightColor(24px,600 ,38px ,#424242 )
+    
+    }
+    }
+    
+    .fourthSlider_item-right_price {
+        padding: 0 0 30px 0;
+        img{ 
+            margin: 0 23px 0 0 ;
+            width:70px;
+            height:70px;
+        }
+        
+    }
+}
+    .fourthSlider_hello_comments {
+    @include FontsizeFontWeightLineheightColor(20px,400 ,23px ,#424242 );
+}
+.item-left_text {
+    padding: 25px 0 32px 0;
+    @include FontsizeFontWeightLineheightColor(20px,400 ,23px ,#424242 );
+}
+// FOOTER ------------------------------------------------------------------
+@media (max-width: 1401px) {
+
+    footer{
+        // padding: 0 90px;
+    }
+    .footer {
+        &__container {
+            padding: 70px 0px 98px 133px;
+            // max-width:1920px;
+            border: 3px solid #8B9D83;
+    
+            display: grid;
+            grid-template-columns: 35% 15% 50%;
+        }
+    
+        &__logo {
+            img {
+                width: 228px;
+                height: 75px
+            }
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        &_info {
+            @include FontsizeFontWeightLineheightColor(14px,400 ,16px ,#424242
+            );
+            padding: 17px 0 18px 0;
+        }
+    
+        &_requisites {
+            @include FontsizeFontWeightLineheightColor(16px,400 ,19px ,#A49B9B )
+        }
+    
+    
+        &__menu {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-auto-rows: 30%;
+            // align-self: center;
+            justify-content: flex-end;
+    
+            &_item {
+                @include FontsizeFontWeightLineheightColor(20px,400 ,24px ,#424242 )
+            }
+        }
+    
+        
+        &__contacts {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+    
+            &_details {
+                padding: 0 0 16px 0;
+             
+                display: flex;
+                img {
+                    margin-right: 37px;
+                }
+            }
+            &_details:first-child {
+                margin-right:150px;
+                img {
+                    margin-right: 37px;
+                }
+            }
+            &_details:nth-child(2) {
+                margin-right:50px;
+                img {
+                    margin-right: 37px;
+                }
+            }
+            &_details:last-child {
+                margin-right:25px;
+                img {
+                    height:27px;
+                    flex: 0 0 24px;
+                }
+            }
+            .footer__contacts_details {
+                @include FontsizeFontWeightLineheightColor(20px,400 ,23px ,#424242 );
+            }
+    
+         
+        }
+    }
+    
+
+}

@@ -13,7 +13,7 @@
     <div class="container">
 
         <div class="container__header">
-            <div class="header">
+            <header class="header">
                 <a href="" class="header__logo">
                     <img src="img/logo.png" alt="">
                     <nav class="header__menu">
@@ -24,38 +24,42 @@
                         <div class="menu_item">Конакты</div>
                     </nav>
                 </a>
-
                 <div class="header__info">
                     <img class="header__phone-img" src="/img/phone.png" alt="">
                     <div class="header__phone">+7 777 777 777</div>
                     <div class="header__search"><img src="/img/search.png" alt=""></div>
                 </div>
-            </div>
+                <div class="header__burger">
+                    <span>sdfsflerf</span>
+                </div>
+
+            </header>
         </div>
         <div class="slider">
             <div class="slider__info">
                 <div class="slider_text">
-                    <h1>Отделка <br> <span class="slider_woodenhouse"> деревянных домов</span> <br> в Москве и
-                        области</h1>
-                    <span class="comments slider-comments">с оптимизацией сметы до 30%
-                        <br>и гарантией до 15 лет</span>
+                    <h1>Отделка <br> <span class="slider_woodenhouse"> деревянных домов</span> <br> <span
+                            >в Москве и
+                            области </span></h1>
+                   <div class="comments slider-comments"> <span >с оптимизацией сметы до 30%
+                        <br>и гарантией до 15 лет</span></div>
                 </div>
                 <div class="slider_buttons">
-                    <button class="allbuttons"> РАССЧИТАТЬ СТОИМОСТЬ РАБОТ</button>
+                    <button class="allbuttons slider_button_send"> РАССЧИТАТЬ СТОИМОСТЬ РАБОТ</button>
                     <a href=""><img src="/img/instagram.png" alt=""></a>
                 </div>
             </div>
 
             <div class="slider-container">
                 <div class="slider__items">
-                    <img src="/img/slider1.png" alt="" class="slider_item">
-                    <img src="/img/slider2.png" alt="" class="slider_item">
-                    <img src="/img/slider3.png" alt="" class="slider_item">
+                    <img src="/img/slider1.png" alt="" class="slider_item" style="width:100%; height:100% ">
+                    <img src="/img/slider2.png" alt="" class="slider_item" style="width:100%; height:100% ">
+                    <img src="/img/slider3.png" alt="" class="slider_item" style="width:100%; height:100% ">
 
                 </div>
             </div>
 
-            <div class="slider_arrow">
+            <div class="slider_arrow slider_arrow_first">
                 <img src="/img/slider-arrow.png" alt="" class="arrow-item">
 
             </div>
@@ -64,7 +68,7 @@
         </div>
         <section class="steps-work">
             <div class="steps-work_title">
-                <h2 class="h3style">Прозрачный и <br> понятный <br>
+                <h2 class="h3style">Прозрачный и понятный
                     процесс работы</h2>
                 <span class="comments">Вы будете получать фото и видео <br>
                     отчеты на всем протяжении работы</span>
@@ -130,15 +134,15 @@
             </div>
         </div>
         <div class="secondSlider-container">
-            <div class="slider_arrow secondSlider_arrow"> <img src="/img/arrow_bak_ios_24px.png" class="arrow-right">
+            <div class="slider_arrow secondSlider_arrow"> <img src="/img/arrow_bak_ios_24px.png" class="arrow-item arrow-right">
             </div>
             <div class="secondSliderLine">
                 <div class="secondSlider__items">
                     <div class="secondSlider_item">
                         <img class="secondSlider_img" src="/img/2slider1.png" alt="">
                         <div class="secondSlider_item_secondSlider-info">
-                            <span class="titleSlider">КП золотые сосны</span>
-                            <div class="slider_item_button">
+                            <span class="titleSlider secondSlider_item_title">КП золотые сосны</span>
+                            <div class="slider_item_button secondSlider_item_button">
                                 <a href="">Смотреть проект</a>
                                 <img class="mini-arrow" src="/img/mini-arrow.png" alt="">
                             </div>
@@ -147,8 +151,8 @@
                     <div class="secondSlider_item">
                         <img class="secondSlider_img" src="/img/2slider2.png" alt="">
                         <div class="secondSlider_item_secondSlider-info">
-                            <span class="titleSlider">КП золотые сосны 290 </span>
-                            <div class="slider_item_button">
+                            <span class="titleSlider secondSlider_item_title">КП золотые сосны 290 </span>
+                            <div class="slider_item_button secondSlider_item_button">
                                 <a href="">Смотреть проект</a>
                                 <img class="mini-arrow" src="/img/mini-arrow.png" alt="">
                             </div>
@@ -157,8 +161,8 @@
                     <div class="secondSlider_item">
                         <img class="secondSlider_img" src="/img/2slider1.png" alt="">
                         <div class="secondSlider_item_secondSlider-info">
-                            <span class="titleSlider">КП золотые сосны</span>
-                            <div class="slider_item_button">
+                            <span class="titleSlider secondSlider_item_title">КП золотые сосны</span>
+                            <div class="slider_item_button secondSlider_item_button">
                                 <a href="">Смотреть проект</a>
                                 <img class="mini-arrow" src="/img/mini-arrow.png" alt="">
                             </div>
@@ -167,8 +171,8 @@
                     <div class="secondSlider_item">
                         <img class="secondSlider_img" src="/img/2slider2.png" alt="">
                         <div class="secondSlider_item_secondSlider-info">
-                            <span class="titleSlider">КП золотые сосны 290 </span>
-                            <div class="slider_item_button">
+                            <span class="titleSlider secondSlider_item_title">КП золотые сосны 290 </span>
+                            <div class="slider_item_button secondSlider_item_button">
                                 <a href="">Смотреть проект</a>
                                 <img class="mini-arrow" src="/img/mini-arrow.png" alt="">
                             </div>
@@ -176,9 +180,9 @@
                     </div>
                 </div>
             </div>
-            <div class="slider_arrow secondSlider_arrow"> <img src="/img/arrow_forward_ios_24px.png"
-                    class="arrow-right"></div>
-            <div class="secondSlider_bottom-button">
+            <div class="slider_arrow secondSlider_arrow secondSlider_arrow_right"> <img
+                    src="/img/arrow_forward_ios_24px.png" class="arrow-right"></div>
+            <div class="secondSlider_bottom-button_general secondSlider_bottom-button">
                 <a href="#">смотреть все проекты</a>
             </div>
         </div>
@@ -305,6 +309,9 @@
             </div>
             <div class="slider_arrow thirdSlider_arrow"> <img src="/img/arrow_forward_ios_24px.png" class="arrow-right">
             </div>
+            <div class="secondSlider_bottom-button_general thirdSlider_bottom-button">
+                <a href="#">Смотреть все услуги</a>
+            </div>
         </div>
         <div class="questions">
             <div class="h3style question__title">
@@ -331,25 +338,29 @@
                         <div class="fourthSlider_item-right">
                             <div class="fourthSlider_item-right_manager-name">
                                 <img src="/img/questions_slider/photo.png" alt="">
-                                <span>Иванов Борис <br> <span class="comments">Инженер проектов </span> </span>
+                                <div>
+                                    <h4>Иванов Борис </h4>
+                                    <span class="comments">Инженер проектов </span>
+                                </div>
                             </div>
-                            <div>
-                                <span class="comments">Здравствуйте, меня зовут Борис, и я помогу Вам понять, какой
-                                    бюджет нужен для отделки вашего дома под ключ</span>
+                            <div class="fourthSlider_item-right_hello comments>
+                                <span class=" comments ">Здравствуйте, меня зовут Борис, и я помогу Вам понять, какой
+                                бюджет нужен для отделки вашего дома под ключ</span>
                                 <h4>Ответив на вопросы, Вы получите</h4>
                             </div>
-                            <div class="fourthSlider_item-right_price">
+                            <div class=" fourthSlider_item-right_price">
                                 <img src="/img/questions_slider/price.png" alt="">
-                                <span class="comments">Ориентировочную стоимость</span>
+                                <span class="comments fourthSlider_hello_comments">Ориентировочную стоимость</span>
                             </div>
                             <div class="fourthSlider_item-right_price">
                                 <img src="/img/questions_slider/quotation.png" alt="">
-                                <span class="comments">Точную подборку проектов, исходя из ваших ответов,
+                                <span class="comments fourthSlider_hello_comments">Точную подборку проектов, исходя из
+                                    ваших ответов,
                                     либо предложим новый вариант</span>
                             </div>
                             <div class="fourthSlider_item-right_price">
                                 <img src="/img/questions_slider/gifts.png" alt="">
-                                <span class="comments">Один из 3-х подарков
+                                <span class="comments fourthSlider_hello_comments">Один из 3-х подарков
                                     при заказе отделки у нас</span>
                             </div>
                         </div> <!-- Правый блок слайда -->
@@ -358,9 +369,47 @@
             </div>
         </div>
 
+        <footer>
+            <div class="footer__container">
+                <div class="footer__logo">
+                    <img src="/img/logo.png" alt="">
+                    <div class="footer_info">Отделка деревянных домов <br>
+                        в Москве и области</div>
+                    <div class="footer_requisites">ООО "Пайнвуд Хомс" <br>
+                        ИНН: 9715410587 <br>
+                        ОГРН: 1217700593857</div>
+                </div>
+                <nav class="footer__menu">
+                    <div class="description footer__menu_item">Главная</div>
+                    <div class="description footer__menu_item">Цены</div>
+                    <div class="description footer__menu_item">Проекты</div>
+                    <div class="description footer__menu_item">О нас</div>
+                    <div class="description footer__menu_item">Услуги</div>
+                    <div class="description footer__menu_item">Контакты</div>
+                </nav>
+                <div class="footer__contacts">
+                    <div class="description footer__contacts_details">
+                        <img src="/img/phone.png" alt="">
+                        <div>+7 777 777 77</div>
+                    </div>
+                    <div class="description footer__contacts_details">
+                        <img src="/img/Mail.png" alt="">
+                        <div>info@pinewoodhomes.ru</div>
+                    </div>
+                    <div class="description footer__contacts_details">
+                        <img src="/img/address.png" alt="">
+                        <div>Владимирская обл. <br>
+                            г. Александров <br>
+                            ул. Ленина 13/7 БЦ Свечка, <br>
+                            оф. 211</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
     </div>
 
-    <script type="module" src="/js/main.js"></script>
+    <script type="module" async src="/js/main.js"></script>
     <!-- <script async src="/js/secondslider.js"></script> -->
 </body>
 

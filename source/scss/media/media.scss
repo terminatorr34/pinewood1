@@ -1,0 +1,13 @@
+
+@media (max-width:744px) {
+.header {
+
+    &__burger {
+        display: none;
+        width: 20px;
+        height:40px;
+        position: absolute;
+        left: 50%;
+    }
+}
+}

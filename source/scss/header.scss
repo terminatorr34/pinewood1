@@ -12,6 +12,7 @@
 }
 
 .container__header {
+    padding:0 90px;
     margin-bottom: 97px;
     max-width:100%;
     height: auto;
@@ -22,8 +23,8 @@
     align-items: center;
     height:160px;
     max-width:100%;
-    // flex: 1 1 auto;
     justify-content: space-between;
+    position: relative;
 
     &__logo {
         display: flex;
@@ -36,7 +37,7 @@
     &__menu {
         flex: 1 1 auto;
         justify-content: flex-start;
-        margin: 0 0px 0 76px;
+        margin: 0 0px 0 66px;
         display: flex;
         @include FontsizeFontWeightLineheightColor(24px,400 ,28.13px ,#424242 );
     }
@@ -45,7 +46,7 @@
 .menu {
 
     &_item {
-        margin: 0 60px 0 0;
+        margin: 0 50px 0 0;
     }
     &_item:nth-child(4)  {
         width:62px;
@@ -81,4 +82,15 @@ padding: 0 19px;
         // display: block;
     }
 }
+}
+
+.header {
+
+    &__burger {
+        display: none;
+        width: 20px;
+        height:40px;
+        position: absolute;
+        left: 50%;
+    }
 }
