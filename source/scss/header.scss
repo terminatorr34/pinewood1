@@ -1,96 +1,86 @@
-
-@mixin FontsizeFontWeightLineheightColor ($fs,$fw,$lh,$c) {
+@mixin FontsizeFontWeightLineheightColor ($fs, $fw, $lh, $c) {
     font-size: $fs;
     font-weight: $fw;
     line-height: $lh;
     color: $c;
 
 }
-@mixin WidthHeight ($w,$h) {
+
+@mixin WidthHeight ($w, $h) {
     width: $w;
     height: $h;
 }
 
 .container__header {
-    padding:0 90px;
-    margin-bottom: 97px;
-    max-width:100%;
-    height: auto;
-    // flex: 1 1 auto;
-}
-.header {
-    display:flex;
     align-items: center;
-    height:160px;
-    max-width:100%;
-    justify-content: space-between;
     position: relative;
+    padding: 0 90px;
+    margin-bottom: 97px;
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    display: flex;
+    justify-items: flex-start;
+    max-width: 100%;
+    height: auto;
+    align-items: center;
 
     &__logo {
+        padding-right: 76px;
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    &__info {
         display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        flex: 1 1 auto;
-        // margin: 0 76px 0 0;
+        margin-left: auto;
+        @include FontsizeFontWeightLineheightColor(24px, 400, 28.13px, #424242);
+        padding: 0 19px;
+
+    }
+
+    .header {
+
+        &__phone {
+            white-space: nowrap;
+        }
     }
 
     &__menu {
-        flex: 1 1 auto;
-        justify-content: flex-start;
-        margin: 0 0px 0 66px;
+        margin: 0;
         display: flex;
-        @include FontsizeFontWeightLineheightColor(24px,400 ,28.13px ,#424242 );
+        @include FontsizeFontWeightLineheightColor(24px, 400, 28.13px, #424242);
     }
+    
+    &__phone-img {
+        width: 28px;
+        height: 28px;
+    }
+    
+    &__burger1 {
+        display: none;
+        width: 49px;
+        height: 30px;
+    
+    }
+}
 
-  
+
 .menu {
 
     &_item {
         margin: 0 50px 0 0;
     }
-    &_item:nth-child(4)  {
-        width:62px;
+
+    &_item:nth-child(4) {
+        width: 62px;
         margin: 0 60px 0 0;
-        // flex: 1 0 62px;
     }
+
     &_item:last-child {
         margin: 0 0px 0 0;
-    }
-}
-
-&__info{
-    justify-content: flex-end;
-    // flex: 1 0 auto;
-    // padding-left: 512px;
-// flex-direction: raw;
- display: flex;
-//  flex: 0 0 548px;
-}
-.header {
-
-    &__phone-img {
-        // padding-left: 250px;
-    }
-
-    &__phone {
-        // display: block;
-        @include FontsizeFontWeightLineheightColor(24px,400 ,28.13px ,#424242 );
-padding: 0 19px;
-    }
-
-    &__search {
-        // display: block;
-    }
-}
-}
-
-.header {
-
-    &__burger {
-        display: none;
-        width: 20px;
-        height:40px;
-        position: absolute;
-        left: 50%;
     }
 }

@@ -72,12 +72,14 @@ justify-items: center;
 }
 
 
-.arrow-right {}
+// .arrow-right {}
 
 .secondSlider_bottom-button{
     margin-top: 55px;
-    
+    // -ms-grid-column: 2; 
+    // -ms-grid-column-span: 2;
     grid-column-start: 2;
+    grid-area: secondSlider_bottom-button;
     // grid-column-end: -1;
 
 }

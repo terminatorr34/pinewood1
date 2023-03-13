@@ -40,12 +40,11 @@
 }
 
 .container {
-    // max-width: 1920px;
+   max-width: 1920px;
     overflow: hidden;
     height: auto;
     background-color: #F3F4F0;
-    // padding: 0 90px;
-    flex: 1 1 1920px;
+    padding: 36px 0px;
 
 }
 
@@ -146,4 +145,4 @@
 @import '../scss/questions.scss';
 @import '../scss/footer.scss';
 @import '../scss/media/media1400.scss';
-@import '../scss/media/media.scss';
+@import '../scss/media/media744.scss';

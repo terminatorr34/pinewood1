@@ -1,10 +1,71 @@
+.container__header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 0 90px;
+  margin-bottom: 97px;
+  max-width: 100%;
+  height: auto;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-items: flex-start;
+  max-width: 100%;
+  height: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 160px;
-  width: 100%;
+}
+.header__logo {
+  padding-right: 76px;
+  max-width: 100%;
+  height: auto;
+}
+.header__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.13px;
+  color: #424242;
+  padding: 0 19px;
+}
+.header .header__phone {
+  white-space: nowrap;
+}
+.header__menu {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.13px;
+  color: #424242;
+}
+.header__phone-img {
+  width: 28px;
+  height: 28px;
+}
+.header__burger1 {
+  display: none;
+  width: 49px;
+  height: 30px;
+}
+
+.menu_item {
+  margin: 0 50px 0 0;
+}
+.menu_item:nth-child(4) {
+  width: 62px;
+  margin: 0 60px 0 0;
+}
+.menu_item:last-child {
+  margin: 0 0px 0 0;
 }
