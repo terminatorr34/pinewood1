@@ -23,12 +23,12 @@
                     <div class="menu_item">Услуги</div>
                     <div class="menu_item">Цены</div>
                     <div class="menu_item">О нас</div>
-                    <div class="menu_item">Конакты</div>
+                    <div class="menu_item">Контакты</div>
                 </nav>
                 <div class="header__info">
                     <img class="header__phone-img" src="/img/phone.png" alt="">
                     <div class="header__phone">+7 777 777 777</div>
-                    <div class="header__search"><img src="/img/search.png" alt=""></div>
+                    <!-- <div class="header__search"><img src="/img/search.png" alt=""></div> -->
                 </div>
                 <div class="header__burger1_menu">
                     <div class="header__burger1_menu_items">
@@ -36,7 +36,7 @@
                         <div class="header__burger1_menu_item">Услуги</div>
                         <div class="header__burger1_menu_item">Цены</div>
                         <div class="header__burger1_menu_item">О нас</div>
-                        <div class="header__burger1_menu_item">Конакты</div>
+                        <div class="header__burger1_menu_item">Контакты</div>
                     </div>
                 </div>
                 <div class="header__burger1">
@@ -58,8 +58,7 @@
                     <a href=""><img src="/img/instagram.png" alt=""></a>
                 </div>
             </div>
-
-            <div class="slider-container">
+            <div class="slider__container">
                 <div class="slider__items">
                     <img src="/img/slider1.png" alt="" class="slider_item" style="width:100%; height:100% ">
                     <img src="/img/slider2.png" alt="" class="slider_item" style="width:100%; height:100% ">
@@ -67,14 +66,14 @@
 
                 </div>
             </div>
-
+           
             <div class="slider_arrow slider_arrow_first">
                 <img src="/img/slider-arrow.png" alt="" class="arrow-item">
-
+    
             </div>
 
-
         </div>
+       
         <section class="steps-work">
             <div class="steps-work_title">
                 <h2 class="h3style">Прозрачный и понятный

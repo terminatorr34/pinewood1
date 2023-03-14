@@ -16,29 +16,15 @@
     padding: 0 90px 226px 90px;
     width: 100%;
     height: 100%;
-    display: grid;
-    grid-template-columns: (49% 49% 12%);
+    display: flex;
     box-sizing: border-box;
     background: url('/img/main_background1.png') no-repeat 70% 60%;
 
-    .slider-container {
-        background-color: inherit;
-        flex: 1 1 60%;
-        margin: 0px 0px 0 0px;
-        overflow: hidden;
-        display: flex;
-        height: 100%;
-        justify-content: space-between;
-    }
 
-    .slider__wrapper {
-        width: 50%;
-        overflow: hidden;
-    }
 
     &__info {
         display: flex;
-        flex: 1 3 40%;
+        flex: 1 1 50%;
         justify-content: space-around;
         flex-direction: column;
         padding: 0 10px 0 0;
@@ -46,11 +32,16 @@
         align-items: center;
 
         h1 {
+            padding: 0 0 32px 0;
             @include FontsizeFontWeightLineheightColor(64px, 600, 75px, #424242)
         }
 
         .slider_woodenhouse {
             color: #8B9D83;
+        }
+
+        .slider-comments {
+            padding: 0 0 134px 0;
         }
     }
 
@@ -66,6 +57,7 @@
         display: flex;
         align-items: flex-end;
         width: 100%;
+
         a {
             margin-left: 64px;
             display: flex;
@@ -88,7 +80,18 @@
         cursor: pointer;
         scale: 102%;
     }
+
     .slider_arrow_first {
-        align-self: center;
+        position: absolute;
     }
+}
+
+.slider__container {
+    background-color: inherit;
+    flex: 1 1 47%;
+    margin: 0px 120px 0 0px;
+    overflow: hidden;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
 }

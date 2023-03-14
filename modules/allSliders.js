@@ -1,7 +1,7 @@
 
 const allSliders = {
     firstSliderStart: function firstSliderStart() {
-        const sliderContainer = document.querySelector('.slider-container')
+        const sliderContainer = document.querySelector('.slider__container')
         const imgsSlider = document.querySelectorAll('.slider_item')
         const sliderLine = document.querySelector('.slider__items')
         const arrow = document.querySelector('.slider_arrow')

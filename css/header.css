@@ -69,3 +69,7 @@
 .menu_item:last-child {
   margin: 0 0px 0 0;
 }
+
+.header__burger1_menu {
+  display: none;
+}

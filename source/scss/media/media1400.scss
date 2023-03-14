@@ -128,15 +128,17 @@
     .slider {
         padding: 0 120px 201px 120px;
         flex: 1 1 100%;
-
         .slider_buttons {
             a {
                 margin-left: 30px;
             }
         }
-
+        &__container {
+            flex: 1 1 52%;
+            margin: 0px 90px 0 0px;
+        }
         &__info {
-
+            flex: 1 1 48%;
             h1 {
                 @include FontsizeFontWeightLineheightColor(48px, 600, 56px, #424242)
             }
@@ -151,35 +153,28 @@
 
             .slider-comments {
                 @include FontsizeFontWeightLineheightColor(24px, 400, 28px, #424242);
+                padding: 0 0 66px 0;
             }
         }
-
-        // &_arrow {
-        //     width: 10%;
-        //     height: 10%;
-        // }
-
     }
-
+.arrow-item {
+    width:67px;
+    height:67px;
+}
 
 }
 
 // первый слайдер ---------------------------------------------------------------
 
 @media(max-width: 1201px) {
-    .slider {
-        // padding: 0 60px 50px 60px;
-    }
 
-    .slider-container {
+    .slider__container {
         flex: 0 0 50%;
     }
 
     .slider__info {
 
-        // justify-content: space-between;
         h1 {
-            // padding-bottom: 18px;
             @include FontsizeFontWeightLineheightColor(40px, 600, 46px, #424242)
         }
     }
@@ -200,15 +195,21 @@
 }
 
 @media(max-width: 1055px) {
+
+    .slider {
+        grid-template-columns: (60% 40% 12%);
+    }
+
     .slider__info {
         h1 {
-            padding-bottom: 18px;
-            @include FontsizeFontWeightLineheightColor(34px, 600, 34px, #424242)
+            padding-bottom: 31px;
+            @include FontsizeFontWeightLineheightColor(32px, 600, 37px, #424242)
         }
     }
 
     .slider_text {
-        @include FontsizeFontWeightLineheightColor(16px, 200, 18px, #424242)
+        padding-bottom: 72px;
+        @include FontsizeFontWeightLineheightColor(18px, 200, 21px, #424242)
     }
 
     .slider_buttons {
