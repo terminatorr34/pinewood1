@@ -40,7 +40,7 @@
 }
 
 .container {
-   max-width: 1920px;
+    max-width: 1920px;
     overflow: hidden;
     height: auto;
     background-color: #F3F4F0;
@@ -87,28 +87,35 @@
 @media (max-width:1401px) {
     .slider_arrow {
         margin-left: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         width: 67px;
         height: 67px;
-        border: 2px solid #8B9D83;
-        border-radius: 50%;
-        box-shadow: 2px 2px 10px rgb(119, 117, 117);
-        transition: all 0.3s ease;
     }
-    
+
     .slider_arrow:active {
         width: 69px;
         height: 69px;
-        background-color: #dfe4dd;
-        transition: all 0.3s ease;
+
     }
-    
-    .slider_arrow:hover {
-        cursor: pointer;
+
+}
+
+@media (max-width:744px) {
+    .arrow-item {
+        width: 48px;
+        height: 48px;
+    }
+    .slider_arrow {
+        width: 48px;
+        height: 48px;
+    }
+
+    .slider_arrow:active {
+        width: 46px;
+        height: 46px;
+
     }
 }
+
 
 // стили для кнопки в слайдере смотреть проект -> , а также для наименования в слайдере КП золотые сосны
 .slider_item_button {
@@ -157,7 +164,7 @@
 
 .titleSlider {
     width: 50%;
-    @include FontsizeFontWeightLineheightColor(20px, 400, 23px, #424242)
+    @include FontsizeFontWeightLineheightColor(20px, 400, 21px, #424242)
 }
 
 

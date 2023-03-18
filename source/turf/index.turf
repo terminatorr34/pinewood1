@@ -53,27 +53,28 @@
                     <div class="comments slider-comments"> <span>с оптимизацией сметы до 30%
                             <br>и гарантией до 15 лет</span></div>
                 </div>
-                <div class="slider_buttons">
-                    <button class="allbuttons slider_button_send"> РАССЧИТАТЬ СТОИМОСТЬ РАБОТ</button>
-                    <a href=""><img src="/img/instagram.png" alt=""></a>
-                </div>
+
             </div>
             <div class="slider__container">
                 <div class="slider__items">
-                    <img src="/img/slider1.png" alt="" class="slider_item" style="width:100%; height:100% ">
-                    <img src="/img/slider2.png" alt="" class="slider_item" style="width:100%; height:100% ">
-                    <img src="/img/slider3.png" alt="" class="slider_item" style="width:100%; height:100% ">
+                    <img src="/img/slider1.png" alt="" class="slider_item">
+                    <img src="/img/slider2.png" alt="" class="slider_item">
+                    <img src="/img/slider3.png" alt="" class="slider_item">
 
                 </div>
             </div>
-           
+
             <div class="slider_arrow slider_arrow_first">
                 <img src="/img/slider-arrow.png" alt="" class="arrow-item">
-    
+
             </div>
 
         </div>
-       
+        <div class="slider_buttons">
+            <button class="allbuttons slider_button_send"> РАССЧИТАТЬ СТОИМОСТЬ РАБОТ</button>
+            <a href=""><img src="/img/instagram.png" alt=""></a>
+        </div>
+
         <section class="steps-work">
             <div class="steps-work_title">
                 <h2 class="h3style">Прозрачный и понятный
@@ -133,7 +134,7 @@
             </div>
         </section>
         <div class="projects">
-            <div class="projects__info h3style">
+            <div class="h3style projects__info ">
                 <h2>Более <span style="color:#8B9D83">130 выполненых проектов</span>
                     по всей Москве и области</h2>
                 <span class="comments projects_span">По предварительной записи, Вы можете посетить объект, который уже
@@ -212,7 +213,7 @@
                     <div class="thirdSlider_item">
                         <img class="thirdSlider_img" src="/img/3slider1.png" alt="">
                         <div class="thirdSlider_item_thirdSlider-info">
-                            <h5 class="titleSlider">Шлифовка</h5>
+                            <h5 class="titleSlider thirdSlider_item_title">Шлифовка</h5>
                             <span>Подготовка дома к покраске
                                 и увеличение срока службы каркаса</span>
                             <div class="slider_item_button third_button">
@@ -225,7 +226,7 @@
                     <div class="thirdSlider_item">
                         <img class="thirdSlider_img" src="/img/3slider1.png" alt="">
                         <div class="thirdSlider_item_thirdSlider-info">
-                            <h5 class="titleSlider">Шлифовка</h5>
+                            <h5 class="titleSlider thirdSlider_item_title">Шлифовка</h5>
                             <span>Подготовка дома к покраске
                                 и увеличение срока службы каркаса</span>
                             <div class="slider_item_button third_button">
@@ -238,7 +239,7 @@
                     <div class="thirdSlider_item">
                         <img class="thirdSlider_img" src="/img/3slider1.png" alt="">
                         <div class="thirdSlider_item_thirdSlider-info">
-                            <h5 class="titleSlider">Шлифовка</h5>
+                            <h5 class="titleSlider thirdSlider_item_title">Шлифовка</h5>
                             <span>Подготовка дома к покраске
                                 и увеличение срока службы каркаса</span>
                             <div class="slider_item_button third_button">
@@ -251,7 +252,7 @@
                     <div class="thirdSlider_item">
                         <img class="thirdSlider_img" src="/img/3slider1.png" alt="">
                         <div class="thirdSlider_item_thirdSlider-info">
-                            <h5 class="titleSlider">Шлифовка</h5>
+                            <h5 class="titleSlider thirdSlider_item_title">Шлифовка</h5>
                             <span>Подготовка дома к покраске
                                 и увеличение срока службы каркаса</span>
                             <div class="slider_item_button third_button">
@@ -264,7 +265,7 @@
                     <div class="thirdSlider_item">
                         <img class="thirdSlider_img" src="/img/3slider1.png" alt="">
                         <div class="thirdSlider_item_thirdSlider-info">
-                            <h5 class="titleSlider">Шлифовка</h5>
+                            <h5 class="titleSlider thirdSlider_item_title">Шлифовка</h5>
                             <span>Подготовка дома к покраске
                                 и увеличение срока службы каркаса</span>
                             <div class="slider_item_button third_button">
@@ -277,7 +278,7 @@
                     <div class="thirdSlider_item">
                         <img class="thirdSlider_img" src="/img/3slider1.png" alt="">
                         <div class="thirdSlider_item_thirdSlider-info">
-                            <h5 class="titleSlider">Шлифовка</h5>
+                            <h5 class="titleSlider thirdSlider_item_title">Шлифовка</h5>
                             <span>Подготовка дома к покраске
                                 и увеличение срока службы каркаса</span>
                             <div class="slider_item_button third_button">
@@ -290,7 +291,7 @@
                     <div class="thirdSlider_item">
                         <img class="thirdSlider_img" src="/img/3slider1.png" alt="">
                         <div class="thirdSlider_item_thirdSlider-info">
-                            <h5 class="titleSlider">Шлифовка</h5>
+                            <h5 class="titleSlider thirdSlider_item_title">Шлифовка</h5>
                             <span>Подготовка дома к покраске
                                 и увеличение срока службы каркаса</span>
                             <div class="slider_item_button third_button">
@@ -303,7 +304,7 @@
                     <div class="thirdSlider_item">
                         <img class="thirdSlider_img" src="/img/3sliderlast.png" alt="">
                         <div class="thirdSlider_item_thirdSlider-info">
-                            <h5 class="titleSlider">Шлифовка</h5>
+                            <h5 class="titleSlider thirdSlider_item_title">Шлифовка</h5>
                             <span>Подготовка дома к покраске
                                 и увеличение срока службы каркаса</span>
                             <div class="slider_item_button third_button">
@@ -316,7 +317,7 @@
 
                 </div>
             </div>
-            <div class="slider_arrow thirdSlider_arrow"> <img src="/img/arrow_forward_ios_24px.png" class="arrow-right">
+            <div class="slider_arrow thirdSlider_arrow thirdSlider_arrow_right"> <img src="/img/arrow_forward_ios_24px.png" class="arrow-right">
             </div>
             <div class="secondSlider_bottom-button_general thirdSlider_bottom-button">
                 <a href="#">Смотреть все услуги</a>

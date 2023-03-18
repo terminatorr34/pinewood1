@@ -1,6 +1,6 @@
 .secondSlider-container {
   width: 100%;
-  padding: 80px 0px 193px 0px;
+  padding: 80px 90px 193px 90px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: fit-content(5%) 0px fit-content(100%) 0px fit-content(5%);
@@ -72,7 +72,6 @@
 
 .secondSlider_bottom-button {
   margin-top: 55px;
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  grid-area: secondSlider_bottom-button;
+  -ms-grid-row: 2;
+  grid-row: 2;
 }

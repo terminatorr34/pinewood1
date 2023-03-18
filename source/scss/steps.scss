@@ -15,7 +15,8 @@
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0 0 433px 0;
+    max-width:100%;
+    padding: 0 90px 433px 90px;
     background: url('/img/step_background.svg') no-repeat 100% 110%;
     
 
@@ -78,13 +79,11 @@
 
 
 .steps-work {
-    max-width:100%;
-    // height:100vh;
-    padding: 0 90px;
+ 
 
     &_wrapper {
         display: grid;
-        grid-template-columns: repeat(auto-fill, 30%);
+        grid-template-columns: repeat(3, 30%);
         grid-template-rows: repeat(2, minmax(max-content, auto));
         gap: 100px 50px;
         

@@ -14,7 +14,7 @@
 .secondSlider-container {
     // общий контенйер
     width: 100%;
-    padding: 80px 0px 193px 0px;
+    padding: 80px 90px 193px 90px;
     display: grid;
     grid-template-columns: fit-content(5%) fit-content(100%) fit-content(5%);
     align-items: center;
@@ -24,7 +24,6 @@ justify-items: center;
 .secondSliderLine {
     overflow: hidden;
     width:100%;
-    // margin-left:30px;
 }
 .secondSlider_arrow {
     margin: 0 62px 0 0;
@@ -71,15 +70,8 @@ justify-items: center;
 
 }
 
-
-// .arrow-right {}
-
 .secondSlider_bottom-button{
     margin-top: 55px;
-    // -ms-grid-column: 2; 
-    // -ms-grid-column-span: 2;
-    grid-column-start: 2;
-    grid-area: secondSlider_bottom-button;
-    // grid-column-end: -1;
+    grid-row: 2 ;
 
 }

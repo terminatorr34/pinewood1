@@ -1,3 +1,16 @@
+@mixin FontsizeFontWeightLineheightColor ($fs, $fw, $lh, $c) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $c;
+
+}
+
+@mixin WidthHeight ($w, $h) {
+    width: $w;
+    height: $h;
+}
+
 @media (max-width:744px) {
 
     .container {
@@ -5,31 +18,328 @@
 
 
         &__header {
-            padding: 0 62px;
+            padding: 0 42px 0 62px;
             margin-bottom: 59px;
         }
     }
 
-   
 
-    .header__info {
-        display: none;
+
+    .header {
+        &__info {
+            display: none;
+        }
+
+        &__menu {
+            display: none;
+        }
+
+        &__logo {
+            img {
+                width: 200px;
+                height: auto;
+            }
+        }
     }
 
-    .header__menu {
-        display: none;
+    @import '../burger.scss';
+
+    // SLDIER -------------------------------------------------------------------------------------
+
+    .slider {
+        padding: 0 60px 0px 60px;
+
+        &__container {
+            flex: 1 1 50%;
+            margin: 0px 20px 0 0px;
+        }
+
+        &__info {
+            flex: 1 1 60%;
+            padding-bottom: 0px;
+
+            h1 {
+                padding: 0 0 auto 0;
+                @include FontsizeFontWeightLineheightColor(32px, 600, 37px, #424242)
+            }
+        }
+
+        &_text {
+            padding-bottom: 73px;
+            @include FontsizeFontWeightLineheightColor(18px, 200, 21px, #424242);
+
+            .slider_woodenhouse {
+                // white-space: nowrap;
+            }
+        }
+
+        &-comments {
+            @include FontsizeFontWeightLineheightColor (18px, 400, 21px, #424242);
+            padding: 0;
+        }
+
+        &_buttons {
+            padding-left: 60px;
+            margin: 0px 0 120px 0;
+
+            a {
+                margin: 0 0 0 20px;
+                width: 50px;
+                height: 50px;
+            }
+
+        }
+
+        &_button_send {
+
+            @include FontsizeFontWeightLineheightColor(12px, 400, 14px, #ffff);
+            width: 228px;
+            height: 50px;
+        }
+
     }
 
-    .header__logo {
-        img {
-            width:200px;
-            height: auto;
+
+
+
+    // STEPS-WORK -------------------------------------------------------------------------------------
+
+    .steps-work {
+        padding: 0px 60px;
+
+        &_wrapper {
+
+            grid-template-columns: repeat(2, 40%);
+            gap: 65px 67px;
+
+        }
+
+        &_number {
+            @include FontsizeFontWeightLineheightColor(48px, 600, 56px, #8B9D83)
+        }
+
+        &_text {
+            overflow-wrap: break-word;
+            padding-left: 22px;
+
+            h3 {
+                padding: 0 0 15px 0;
+                display: flex;
+                @include FontsizeFontWeightLineheightColor(18px, 400, 21px, #424242);
+            }
+
+            span {
+                display: flex;
+                @include FontsizeFontWeightLineheightColor(16px, 400, 18px, #424242)
+            }
+        }
+
+
+        &_title {
+            padding: 0 0 86px 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            h2 {
+                @include FontsizeFontWeightLineheightColor(24px, 600, 28px, #424242);
+                flex: 1 0 50%;
+                padding-right: 39px;
+            }
+
+            span {
+                @include FontsizeFontWeightLineheightColor(16px, 400, 18px, #424242);
+                // display: block;
+                min-width: 50%;
+                flex: 1 1 50%;
+            }
+        }
+    }
+
+
+    .steps-work {}
+
+    // PROJECTS -------------------------------------------------------------------------------------------
+
+    .projects {
+        &__info {}
+
+        padding: 177px 60px 25px 60px;
+
+        h2 {
+            @include FontsizeFontWeightLineheightColor(24px, 600, 28px, #424242);
+            flex: 1 1 55%;
+            padding-right: 21px;
+        }
+
+        .projects_span {
+            @include FontsizeFontWeightLineheightColor(16px, 400, 18px, #424242);
+            display: block;
+            padding: 0;
+            flex: 1 1 45%;
+        }
+    }
+
+    // SECOND-SLIDER -----------------------------------------------------------------------------------------
+    .secondSlider-container {
+        padding: 0px 60px 121px 60px;
+        // общий контенйер
+        gap: 0 0px;
+        grid-template-columns: fit-content(33%) fit-content(33%) fit-content(33%);
+
+    }
+
+    .secondSliderLine {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .secondSlider {
+        &_arrow {
+            justify-self: end;
+            margin: 56px 22px 0 0px;
+            grid-column-start: 1;
+            grid-row-start: 2;
+            width: 48px;
+            height: 48px;
+
+        }
+
+        &_arrow:active {
+            width: 40px;
+            height: 40px;
+        }
+
+        &_arrow_right {
+            justify-self: start;
+            margin: 56px 0px 0 22px;
+            grid-column-start: 3;
+            grid-row-start: 2;
+
+        }
+
+        &_bottom-button {
+            margin-top: 56px;
+            width: 256px;
+            height: 48px;
+        }
+
+        &_img {
+            height: 287px;
+            width: auto;
+        }
+
+        &_item_secondSlider-info {
+            flex-direction: column;
+        }
+
+        &_item_button {
+            margin-bottom: 33px;
+            width: 200px;
+            height: 50px;
+
+            a {
+                @include FontsizeFontWeightLineheightColor(14px, 400, 16px, white);
+            }
+        }
+
+        &_item_title {
+            width: 100%;
+            text-align: center;
+            @include FontsizeFontWeightLineheightColor(18px, 400, 20px, #424242);
+            padding: 45px 13px 35px 17px;
+        }
+
+    }
+
+    .arrow-right {
+        width: 11px;
+        height: 11px;
+    }
+
+    // SERVICES -----------------------------------------------------------------------------------
+
+    .services {
+        padding: 0 60px 104px 60px;
+
+        &__title {
+            @include FontsizeFontWeightLineheightColor(24px, 600, 28px, #424242);
+        }
+
+        &__text {
+            @include FontsizeFontWeightLineheightColor(16px, 400, 18px, #424242);
+        }
+    }
+
+    // THIRD-SLIDER -----------------------------------------------------------------------------------
+
+
+
+.thirdSlider {
+    &-container {
+        width: 100%;
+        // padding: 80px 0 193px 0;
+        display: grid;
+        grid-template-columns: fit-content(46%) fit-content(46%);
+        column-gap: 0 75px;
+        padding: 0 60px 103px 30px;
+    }
+
+    &_arrow {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        justify-self: end;
+        // margin: 56px 22px 0 0px;
+        width: 48px;
+        height: 48px;
+    }
+
+    &-sliderLine {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 1;
+
+    }
+
+    &_arrow_right {
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 2;
+
+        justify-self: start;
+        margin: 0;
+    }
+
+    &_bottom-button {
+        align-self: flex-end;
+        margin: 0 36px 0px 31px;
+        width: 202px;
+        height: 53px;
+
+        a {
+            @include FontsizeFontWeightLineheightColor(14px, 400, 16px, #424242);
+        }
+    }
+    &_item_thirdSlider-info {
+        h5 {
+            width:100%;
+            @include FontsizeFontWeightLineheightColor(18px,400 ,21px ,#424242 );
+            padding: 28px 36px 13px 23px;
+            margin:0px;
+        }
+        span {
+            width:100%;
+            padding: 13px 31px 30px 24px;
+            margin:0;
         }
     }
     
-    @import '../burger.scss';
-
 
 }
-
-
+}

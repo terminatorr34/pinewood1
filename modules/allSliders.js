@@ -135,7 +135,6 @@ const allSliders = {
 
         }
         init(thirdSliderContainer, thirdImgsSlider, thirdSliderLine, 4, 31)
-        // console.log(width1)
 
         window.addEventListener('resize', function () {
             init(thirdSliderContainer, thirdImgsSlider, thirdSliderLine, 4, 31)
@@ -152,7 +151,6 @@ const allSliders = {
 
             if (count4 < thirdImgsSlider.length - 4) {
                 count4++
-                console.log(count4)
                 sliderMoveRight3()
             }
             else if (count4 >= thirdImgsSlider.length - 4) {
@@ -170,12 +168,10 @@ const allSliders = {
         thirdArrowSlider[0].addEventListener('click', function () {
             if (count5 <= 0 || count5 == thirdImgsSlider.length) {
                 count5 = thirdImgsSlider.length - 4;
-                console.log(count5)
                 sliderMoveLeft3();
             }
             else
                 count5--;
-            console.log(count5)
             sliderMoveLeft3();
         })
 
@@ -192,9 +188,83 @@ const allSliders = {
         })
         
         window.onload = init(thirdSliderContainer, thirdImgsSlider, thirdSliderLine, 4, 30)
-    }
+    },
+    thirdSliderStartMedia1201: function thirdSliderStartMedia1201() {
+        const matchMedia = window.matchMedia('(max-width:1201px)')
+            if (matchMedia.matches) {
+        const thirdSliderContainer = document.querySelector('.thirdSlider-sliderLine')
+        const thirdImgsSlider = document.querySelectorAll('.thirdSlider_item')
+        const thirdSliderLine = document.querySelector('.thirdSlider__items')
+        const thirdArrowSlider = document.querySelectorAll('.thirdSlider_arrow')
+        
+        let width3
+        function init(container, img, slider, qtyOfElem, gap) {
+            width3 = container.offsetWidth;
+            slider.style.width = width3 * img.length + 'px';
+            img.forEach(Element => {
+                Element.style.width = width3 / qtyOfElem - gap + 'px';
+                Element.style.height = 'auto';
+            })
+
+        }
+        init(thirdSliderContainer, thirdImgsSlider, thirdSliderLine, 2, 31)
+
+        window.addEventListener('resize', function () {
+            init(thirdSliderContainer, thirdImgsSlider, thirdSliderLine, 2, 31)
+
+            sliderMoveRight3()
+        })
+        window.addEventListener('mouseover', function () {
+            init(thirdSliderContainer, thirdImgsSlider, thirdSliderLine, 2, 31)
+            sliderMoveRight3()
+        })
+
+        let count4 = 0
+        thirdArrowSlider[1].addEventListener('click', function () {
+
+            if (count4 < thirdImgsSlider.length - 4) {
+                count4++
+                sliderMoveRight3()
+            }
+            else if (count4 >= thirdImgsSlider.length - 4) {
+                count4 = 0
+                sliderMoveRight3()
+            }
+
+            else {
+                count4 = 1;
+                sliderMoveRight3()
+            }
+        })
+
+        let count5 = thirdImgsSlider.length
+        thirdArrowSlider[0].addEventListener('click', function () {
+            if (count5 <= 0 || count5 == thirdImgsSlider.length) {
+                count5 = thirdImgsSlider.length - 4;
+                sliderMoveLeft3();
+            }
+            else
+                count5--;
+            sliderMoveLeft3();
+        })
+
+        function sliderMoveRight3() {
+            thirdSliderLine.style.transform = 'translate(-' + width3 / 2 * count4 + 'px)';
+        }
+        function sliderMoveLeft3() {
+            thirdSliderLine.style.transform = 'translate(-' + width3 / 2 * count5 + 'px)';
+        }
+
+        window.addEventListener('resize', function () {
+            init(thirdSliderContainer, thirdImgsSlider, thirdSliderLine, 2, 30)
+            sliderMoveRight3()
+        })
+        
+        window.onload = init(thirdSliderContainer, thirdImgsSlider, thirdSliderLine, 2, 30)
+    }}
 }
 
 export const firstSliderStart = allSliders.firstSliderStart
 export const secondSliderStart = allSliders.secondSliderStart
 export const thirdSliderStart = allSliders.thirdSliderStart
+export const thirdSliderStartMedia1201 = allSliders.thirdSliderStartMedia1201
