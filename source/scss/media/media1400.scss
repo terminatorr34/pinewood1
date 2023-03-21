@@ -339,6 +339,7 @@
     }
 
 }
+
 @media (max-width: 1201px) {
     .steps-work_wrapper {
         grid-template-columns: repeat(2, 50%);
@@ -369,7 +370,7 @@
 
 // SECOND-SLIDER CONTAINER ------------------------------------------------------
 @media (max-width: 1401px) {
-   
+
 
     .secondSlider-container {
         padding: 80px 30px 138px 30px;
@@ -399,6 +400,7 @@
         @include FontsizeFontWeightLineheightColor(18px, 400, 21px, #424242);
         padding: 45px 19px 45px 45px;
     }
+
     .secondSlider_arrow {
         margin: 0 0px;
     }
@@ -416,7 +418,7 @@
     }
 }
 
-@media (max-width: 961px) { 
+@media (max-width: 961px) {
 
     .secondSlider_item_title {
         @include FontsizeFontWeightLineheightColor(16px, 400, 18px, #424242);
@@ -425,7 +427,7 @@
 
     .secondSlider_item_button {
         width: 42%;
-    
+
         a {
             color: white;
             @include FontsizeFontWeightLineheightColor(12px, 400, 14px, white)
@@ -485,23 +487,52 @@
 .thirdSlider_bottom-button {
     margin-top: 40px;
 }
+// FOURTHSLIDER -------------------------------------------------------------------------------------------
 
 @media (max-width:1401px) {
     .questions {
-        padding: 0 120px;
+        padding: 130px 120px 154px 120px;
     }
 
     .question__title {
+        @include FontsizeFontWeightLineheightColor(36px, 600, 42px, #424242);
         padding: 0px 0 72px 0;
     }
 
-    .fourthSlider-sliderLine {
-        // ограничивающий контейнер для блока
-        width: 100B9D83;
-        padding: 46px 43px 50px 43px;
-        margin-bottom: 154px;
-    }
+    .fourthSlider {
 
+        &_item {
+            margin-right: 43px;
+        }
+        &-sliderLine {
+            // ограничивающий контейнер для блока
+            width: 100%;
+            padding: 46px 0;
+            margin-bottom: 0px;
+        }
+
+        &_item-left {
+            flex: 1 1 50%;
+        }
+
+        &_item-right {
+            flex: 1 1 50%;
+        }
+
+        &-sliderLine_form {
+            background: url('/img/questions_slider/background_slider_questions.png') no-repeat 80% 50%;
+            background-size: 60%;
+
+            [type="text"] {
+                padding: 0px 0px 0 10px;
+            }
+        }
+
+        &_buttons {
+            margin-top: 365px;
+        }
+
+    }
 
 
     .item-left_text {
@@ -514,12 +545,6 @@
         @include FontsizeFontWeightLineheightColor(32px, 600, 37px, #424242);
     }
 
-    .fourthSlider-sliderLine_form {
-
-        [type="text"] {
-            padding: 0px 0px 0 10px;
-        }
-    }
 
     .fourthSlider_button-back {
         height: 62px;
@@ -533,10 +558,7 @@
         width: 30%;
     }
 
-    .fourthSlider_item-right {
-        padding: 0 0px 0 24px;
-        flex: 1 1 calc(692 / 1740*100%)
-    }
+
 
     .fourthSlider_item-right_manager-name {
         img {
@@ -580,15 +602,220 @@
         }
 
     }
+
+    .fourthSlider_hello_comments {
+        @include FontsizeFontWeightLineheightColor(20px, 400, 23px, #424242);
+    }
+
+    .item-left_text {
+        padding: 25px 0 32px 0;
+        @include FontsizeFontWeightLineheightColor(20px, 400, 23px, #424242);
+    }
 }
 
-.fourthSlider_hello_comments {
-    @include FontsizeFontWeightLineheightColor(20px, 400, 23px, #424242);
+@media (max-width: 1201px) {
+    .fourthSlider {
+        &_item {
+            flex-direction: column;
+        }
+
+        &_item-left {
+            border: none;
+        }
+
+        &_item-right {
+            padding-left: 0;
+        }
+
+        &-sliderLine_form {
+            background: url('/img/questions_slider/background_slider_questions.png') no-repeat 80% 20%;
+            background-size: 40%;
+
+            [type="text"] {
+                padding: 0px 0px 0 10px;
+            }
+        }
+
+        &_buttons {
+            margin: 350px 0 100px 0;
+        }
+
+    }
 }
 
-.item-left_text {
-    padding: 25px 0 32px 0;
-    @include FontsizeFontWeightLineheightColor(20px, 400, 23px, #424242);
+// второй блок FOURTH-SLIDER 0------------------------------------------------------------------
+@media (max-width: 1401px) {
+    .fourthSlider2 {
+
+        
+        &_item {
+            // блок слайдер состоящий из левой и правой секции
+            display: flex;
+            // flex-direction: column;
+            min-width: 100%;
+            padding-right: 52px;
+            margin-left: 52px;
+        }
+        &_item-left {
+            flex: 1 1 40%;
+        }
+    
+        &_item-right {
+            flex: 1 1 60%;
+            padding: 0 0 0 50px;
+        }
+    
+    
+        &-items_material {
+            display: grid;
+            grid-template-columns: repeat(3,20%);
+            gap: 19px 53px;
+            padding: 0 0 90px 0;
+            position: relative;
+        }
+    
+        &-item_material {
+            display: flex;
+            flex-direction: column;
+            // padding-right:20px;
+    
+            img {
+                margin-bottom: 17px;
+                width: 110px;
+                height: 110px;
+            }
+    
+            span {
+                @include FontsizeFontWeightLineheightColor(16px, 400, 18px, #525252);
+            }
+        }
+    
+    
+    
+        &-item_material_yourChoise {
+            @include FontsizeFontWeightLineheightColor(16px, 400, 18px, #525252);
+            background-color: white;
+            width: 200px;
+            height: 47px;
+            border-radius: 20px;
+            padding: 15px 10px;
+            position: absolute;
+            top: 52%;
+            left:55%;
+        }
+        
+        &_button-back {
+            height: 62px;
+            width: 157px;
+            margin: 0 46px 0 0;
+            @include FontsizeFontWeightLineheightColor(20px,400 ,23px ,#686656);
+    
+        }
+    
+        &_button-forward {
+            height: 62px;
+            width: 157px;
+            @include FontsizeFontWeightLineheightColor(20px,400 ,23px ,white);
+    
+        }
+    
+    }
+        
+    .fourthSlider-sliderLine {
+    
+    
+    }
+    .fourthSlider2_item-right_manager-name {
+        img {
+            width: 128px;
+            height: 128px;
+        }
+
+        margin: 0 0 51px 0px;
+
+        h4 {
+            padding: 0 0 0 32px;
+            @include FontsizeFontWeightLineheightColor(32px, 600, 37.5px, #424242)
+        }
+
+        div {
+            span {
+                padding: 7px 0 0 41px;
+                @include FontsizeFontWeightLineheightColor(20px, 400, 23px, #424242);
+            }
+        }
+
+    }
+
+    .fourthSlider2_item-right_hello {
+        @include FontsizeFontWeightLineheightColor(20px, 400, 23px, #424242);
+        padding: 0px 0px 32px 0;
+
+        h4 {
+            padding: 32px 0 0 0;
+            @include FontsizeFontWeightLineheightColor(24px, 600, 38px, #424242)
+        }
+    }
+
+    .fourthSlider2_item-right_price {
+        padding: 0 0 30px 0;
+
+        img {
+            margin: 0 23px 0 0;
+            width: 70px;
+            height: 70px;
+        }
+
+    }
+
+    .fourthSlider2_hello_comments {
+        @include FontsizeFontWeightLineheightColor(20px, 400, 23px, #424242);
+    }
+
+    .item-left_text {
+        padding: 25px 0 32px 0;
+        @include FontsizeFontWeightLineheightColor(20px, 400, 23px, #424242);
+    }
+}
+@media (max-width: 1201px) {
+    .fourthSlider2 {
+
+        
+        &_item {
+            // блок слайдер состоящий из левой и правой секции
+            display: flex;
+            flex-direction: column;
+        }
+    
+        &-item_material_yourChoise {
+            
+            top: 52%;
+            left:52%;
+        }
+        &_buttons{
+            margin-bottom: 100px;
+        }
+        &_button-back {
+            height: 62px;
+            width: 250px;
+         
+        }
+    
+        &_button-forward {
+            height: 62px;
+            width: 250px;
+        }
+    
+    }
+
+
+    .fourthSlider2_item-right_hello {
+
+        h4 {
+            padding: 52px 0 0 0;
+        }
+    }
+
 }
 
 // FOOTER ------------------------------------------------------------------
@@ -600,12 +827,12 @@
 
     .footer {
         &__container {
-            padding: 70px 0px 98px 133px;
+            padding: 70px 120px 74px 120px;
             // max-width:1920px;
             border: 3px solid #8B9D83;
 
             display: grid;
-            grid-template-columns: 35% 15% 50%;
+            grid-template-columns: 35% 25% 40%;
         }
 
         &__logo {
@@ -689,6 +916,83 @@
 
         }
     }
+}
+
+@media (max-width: 1201px) {
+
+    .footer {
+        &__container {
+            grid-template-columns: 50% 50% 50%;
+        }
+
+        &__logo {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &_info {
+            padding: 17px 10px 18px 0;
+        }
+
+        &_requisites {
+            width: 100%;
+        }
+
+
+    }
+
+
+}
+
+@media (max-width: 933px) {
+
+    .footer {
+        &__container {
+            grid-template-columns: 50% 65% 35%;
+        }
+
+        &__logo {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &_info {
+            padding: 17px 10px 18px 0;
+        }
+
+        &__menu_item {
+            @include FontsizeFontWeightLineheightColor(18px, 400, 22px, #424242);
+        }
+        &__contacts_details, &__contacts_details div {
+            @include FontsizeFontWeightLineheightColor(18px, 400, 22px, #424242);
+        }
+        &__contacts_details img {
+            margin-right:17px ;
+        }
+        &__contacts_details:nth-child(2) img {
+            margin-right:17px ;
+        }
+    
+        &__contacts_details:first-child img {
+            margin-right:17px ;
+        }
+        &__contacts_details:first-child {
+            margin-right:140px ;
+        }
+    
+
+    &_requisites {
+        width: 100%;
+    }
+
+
+}
 
 
 }

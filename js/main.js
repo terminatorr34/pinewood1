@@ -1,6 +1,8 @@
 import { firstSliderStart, secondSliderStart, thirdSliderStart, thirdSliderStartMedia1201 } from "../modules/allSliders.js"
 import { burgerMobile, arrowPosition, arrowPositionResize, arrowPositionResizeMedia1401, arrowPositionMedia1401, arrowPositionResizeMedia1201, arrowPositionMedia1201, arrowPositionMedia961, arrowPositionResizeMedia961, arrowPositionMedia744, arrowPositionResizeMedia744 } from '../modules/burger.js'
+import deleteBr from "../modules/deleteBr.js"
 
+deleteBr()
 firstSliderStart() // первый слайдер
 secondSliderStart() // второй
 thirdSliderStart() // третий
