@@ -28,7 +28,7 @@
     padding: 30px 0px;
     margin-bottom: 100px;
     background-color: #F5F1EC;
-    overflow: scroll;
+
 }
 
 .fourthSlider {
@@ -36,7 +36,8 @@
     &_items {
         //слайдео, котоый анимируем на transition
         display: flex;
-        width: 100%;
+        width: 60%;
+        overflow: scroll;
         // transform: translate(-1400px) ;
 
     }
@@ -50,15 +51,103 @@
         min-width: 100%;
 
     }
-}
 
-.fourthSlider {
+    &_form {
+        display: flex;
+        flex-direction: column;
+        height: calc(500/609 * 100%);
+        // background-color: aquamarine;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            max-height: 600px;
+        }
+
+    }
 
     &_item-left {
         display: flex;
         flex-direction: column;
         flex: 1 1 60%;
         border-right: 2px solid white;
+    }
+
+    &_item-right {
+        padding: 0 65px 0 14px;
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 40%;
+    }
+
+    &_item-right_manager-name {
+        display: flex;
+        padding: 0 0 0 0px;
+        margin: 0 0 51px 0px;
+        align-items: center;
+
+        h4 {
+            padding: 0 0 0 41px;
+            @include FontsizeFontWeightLineheightColor(40px, 600, 47px, #424242)
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+
+            span {
+                padding: 13px 0 0 41px;
+                @include FontsizeFontWeightLineheightColor(24px, 400, 28px, #424242);
+            }
+        }
+
+    }
+
+    &_item-right_hello {
+        @include FontsizeFontWeightLineheightColor(24px, 400, 28px, #424242);
+        padding: 0px 0px 52px 0;
+
+        h4 {
+            padding: 52px 0 0 0;
+            @include FontsizeFontWeightLineheightColor(32px, 600, 38px, #424242)
+        }
+    }
+
+    &_hello_comments {
+        @include FontsizeFontWeightLineheightColor(24px, 400, 28px, #424242);
+
+
+    }
+
+    &_item-right_price {
+        padding: 0 0 30px 0;
+        display: flex;
+        align-items: center;
+
+        img {
+            margin: 0 31px 0 0;
+        }
+    }
+
+    &-sliderLine_form {
+        background: url('/img/questions_slider/background_slider_questions.png') no-repeat 80%;
+        background-size: 40%;
+        height: 100%;
+
+        [type="text"] {
+            padding: 5px 10px;
+            width: 50%;
+            height: 70px;
+            border: 2px solid #b5b3b0;
+            border-radius: 20px;
+        }
+    }
+
+    &_buttons {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 450px;
     }
 
 
@@ -75,108 +164,6 @@
 
 }
 
-.fourthSlider_form {
-    display: flex;
-    flex-direction: column;
-    height: calc(500/609 * 100%);
-    // background-color: aquamarine;
-
-    form {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        max-height: 600px;
-    }
-
-}
-
-.fourthSlider-sliderLine_form {
-    background: url('/img/questions_slider/background_slider_questions.png') no-repeat 80%;
-    background-size: 40%;
-    height: 100%;
-    // align-items: center;
-
-    [type="text"] {
-        padding: 5px 10px;
-        width: 50%;
-        height: 70px;
-        border: 2px solid #b5b3b0;
-        border-radius: 20px;
-
-
-    }
-}
-
-.fourthSlider_buttons {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 450px;
-}
-
-.fourthSlider_button-back {
-    height: 62px;
-    width: 185px;
-    background-color: white;
-    border: 2px solid #b5b3b0;
-    margin: 0 46px 0 0;
-    @include FontsizeFontWeightLineheightColor(20px,400 ,23px ,#686656);
-}
-
-.fourthSlider_button-forward {
-    height: 62px;
-    width: 185px;
-    @include FontsizeFontWeightLineheightColor(20px,400 ,23px ,white);
-}
-
-.fourthSlider_item-right {
-    padding: 0 0px 0 64px;
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 40%;
-}
-
-.fourthSlider_item-right_manager-name {
-    display: flex;
-    padding: 0 0 0 0px;
-    margin: 0 0 51px 0px;
-    align-items: center;
-
-    h4 {
-        padding: 0 0 0 41px;
-        @include FontsizeFontWeightLineheightColor(40px, 600, 47px, #424242)
-    }
-
-    div {
-        display: flex;
-        flex-direction: column;
-
-        span {
-            padding: 13px 0 0 41px;
-            @include FontsizeFontWeightLineheightColor(24px, 400, 28px, #424242);
-        }
-    }
-
-}
-
-.fourthSlider_item-right_hello {
-    @include FontsizeFontWeightLineheightColor(28px, 400, 32.81px, #424242);
-    padding: 0px 0px 52px 0;
-
-    h4 {
-        padding: 52px 0 0 0;
-        @include FontsizeFontWeightLineheightColor(32px, 600, 38px, #424242)
-    }
-}
-
-.fourthSlider_item-right_price {
-    padding: 0 0 30px 0;
-    display: flex;
-    align-items: center;
-
-    img {
-        margin: 0 31px 0 0;
-    }
-}
 
 // ВТОРОЙ БЛОК СЛАЙДЕРА -------------------------------------------------------------------------------------
 .fourthSlider2 {
@@ -187,12 +174,12 @@
         display: flex;
         // flex-direction: column;
         min-width: 100%;
-        padding: 0 52px;
-
+        padding: 0 52px 0 75px;
         margin-left: 52px;
     }
 
     &-items_material {
+        position: relative;
         display: grid;
         grid-template-columns: repeat(3, 20%);
         gap: 60px 33px;
@@ -200,7 +187,7 @@
     }
 
     &-item_material {
-        
+
         display: flex;
         flex-direction: column;
 
@@ -210,40 +197,30 @@
             height: 142px;
         }
 
-        span {
-            @include FontsizeFontWeightLineheightColor(20px, 400, 23px, #525252);
-        }
     }
 
-
+    &-item_description {
+        @include FontsizeFontWeightLineheightColor(20px, 400, 16px, #424242);
+    }
 
     &-item_material_yourChoise {
-        @include FontsizeFontWeightLineheightColor(20px, 400, 23px, #525252);
-        background-color: white;
         width: 304px;
         height: 80px;
         border-radius: 20px;
-        padding: 30px 20px;
-       
+        padding: 15px;
+        @include FontsizeFontWeightLineheightColor(20px, 400, 23px, #525252);
+
     }
 
-    &_item-right {
-        padding: 0 0 0 64px;
-        flex: 1 1 40%;
-    }
+
 
     &_item-left {
 
-            display: flex;
-            flex-direction: column;
-            flex: 1 1 60%;
-            border-right: 2px solid white;
-        
-        
-            &_text {}
-        
-            &_title {}
-        
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 60%;
+        border-right: 2px solid white;
+
     }
 
     &_form2 {
@@ -256,84 +233,131 @@
     &_buttons {
         display: flex;
         justify-content: flex-start;
-        margin-top: 0px;
-        width:70%;
+        margin-top: 53px;
+        width: 70%;
     }
 
-    &_button-back {
-        height: 62px;
-        width: 185px;
-        background-color: white;
-        border: 2px solid #b5b3b0;
-        padding: 15px 0;
-        margin: 0 46px 0 0;
-        @include FontsizeFontWeightLineheightColor(20px,400 ,23px ,#686656);
-
-    }
-
-    &_button-forward {
-        padding: 15px 0;
-        height: 62px;
-        width: 185px;
-        @include FontsizeFontWeightLineheightColor(20px,400 ,23px ,white);
-
-    }
 }
 
 
-.fourthSlider-sliderLine {
+// .fourthSlider-sliderLine {
 
-    &_form2 {
+//     &_form2 {
+//         display: flex;
+//         flex-direction: column;
+//     }
+// }
+
+// FOURHSLDIER 3 БЛОК ----------------------------------------------------
+
+.fourthSlider3 {
+
+    &_item {
+        // блок слайдер состоящий из левой и правой секции
+        display: flex;
+        // flex-direction: column;
+        min-width: 100%;
+        padding: 0 52px 0 75px;
+        margin-left: 52px;
+    }
+
+    &_item-left {
+        // блок слайдер состоящий из левой и правой секции
         display: flex;
         flex-direction: column;
-    }
-}
-.fourthSlider2_item-right {
-    padding: 0 0px 0 64px;
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 40%;
-}
-
-.fourthSlider2_item-right_manager-name {
-    display: flex;
-    padding: 0 0 0 0px;
-    margin: 0 0 51px 0px;
-    align-items: center;
-
-    h4 {
-        padding: 0 0 0 41px;
-        @include FontsizeFontWeightLineheightColor(40px, 600, 47px, #424242)
+        min-width: 100%;
+        border-right: 2px solid white;
+        //   padding: 0 52px 0 75px;
+        //   margin-left: 52px;
     }
 
-    div {
+    &_form {}
+}
+
+.item-left {
+
+
+
+    &_text {}
+
+    &_title {}
+}
+
+.fourthSlider3-sliderLine {
+
+    &_form {}
+}
+
+.fourthSlider3-items {
+
+    &_material {
+        position: relative;
         display: flex;
-        flex-direction: column;
+        align-items: center;
+        @include FontsizeFontWeightLineheightColor(20px, 400, 23px, #000000);
 
-        span {
-            padding: 13px 0 0 41px;
-            @include FontsizeFontWeightLineheightColor(24px, 400, 28px, #424242);
+        [type=radio] {
+            margin: 0 31px 0 0;
+            width: 55px;
+            height: 55px;
+            border-radius: 2px;
+            opacity: 0%;
+            z-index: 1;
+        }
+
+        [type=radio]:checked {
+            opacity: 0%;
+
+        }
+
+        label {
+            position: relative;
+            margin: 0 158px 0 0;
+
+        }
+
+        label:before {
+            content: "";
+            width: 55px;
+            height: 55px;
+            border: 4px solid #8B9D83;
+            position: absolute;
+            border-radius: 8px;
+            top: -15px;
+            left: -86px;
+
+        }
+
+        label:before:checked {
+            width: 100px;
+        }
+        .fourthSlider3-checked {
+            transition: opacity 0.5s linear;
+        }
+        .fourthSlider3-checked:before {
+            contain: "sdfsdf";
+            position: absolute;
+            background: url('/img/checked_active.png') no-repeat 30% 50%;
+            transition: opacity 0.5s linear;
         }
     }
 
+    &-checked {
+        position: relative;
+    }
+
 }
 
-.fourthSlider2_item-right_hello {
-    @include FontsizeFontWeightLineheightColor(28px, 400, 32.81px, #424242);
-    padding: 0px 0px 52px 0;
+.fourthSlider3 {
 
-    h4 {
-        padding: 52px 0 0 0;
-        @include FontsizeFontWeightLineheightColor(32px, 600, 38px, #424242)
+    &_buttons {
+        display: flex;
+        margin: 400px 0 0 0;
     }
+
 }
 
-.fourthSlider2_item-right_price {
-    padding: 0 0 30px 0;
-    display: flex;
-    align-items: center;
+.slider {
 
-    img {
-        margin: 0 31px 0 0;
-    }
+    &_item {}
 }

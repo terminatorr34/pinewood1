@@ -451,10 +451,10 @@
     border: none;
   }
   .fourthSlider_item-right {
-    padding-left: 0;
+    padding: 0 52px;
   }
   .fourthSlider-sliderLine_form {
-    background: url("/img/questions_slider/background_slider_questions.png") no-repeat 95% 20%;
+    background: url("/img/questions_slider/background_slider_questions.png") no-repeat 95% 25%;
     background-size: 55%;
   }
   .fourthSlider-sliderLine_form [type=text] {
@@ -467,6 +467,30 @@
   }
   .fourthSlider_button-back {
     margin: 0 20px 0 0;
+  }
+  .fourthSlider2-items_material {
+    gap: 19px 65px;
+    padding: 0 0 65px 0;
+  }
+  .fourthSlider2-item_description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #686656;
+  }
+  .fourthSlider2_buttons {
+    margin: 0;
+  }
+  .fourthSlider2_button-back {
+    margin-right: 20px;
+  }
+  .fourthSlider2-item_material_yourChoise {
+    width: 150px;
+    height: 47px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #686656;
   }
   footer {
     max-width: 744px;

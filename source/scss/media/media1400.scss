@@ -487,6 +487,7 @@
 .thirdSlider_bottom-button {
     margin-top: 40px;
 }
+
 // FOURTHSLIDER -------------------------------------------------------------------------------------------
 
 @media (max-width:1401px) {
@@ -502,8 +503,10 @@
     .fourthSlider {
 
         &_item {
+
             margin-right: 43px;
         }
+
         &-sliderLine {
             // ограничивающий контейнер для блока
             width: 100%;
@@ -511,16 +514,15 @@
             margin-bottom: 0px;
         }
 
-        &_item-left {
-            flex: 1 1 50%;
-        }
+        // &_item-left {
+        //     flex: 1 1 50%;
+        // }
 
-        &_item-right {
-            flex: 1 1 50%;
-        }
+        // &_item-right {
+        //     flex: 1 1 50%;
+        // }
 
         &-sliderLine_form {
-            background: url('/img/questions_slider/background_slider_questions.png') no-repeat 80% 50%;
             background-size: 60%;
 
             [type="text"] {
@@ -529,7 +531,17 @@
         }
 
         &_buttons {
-            margin-top: 365px;
+            margin-top: 465px;
+        }
+
+        &_button-back {
+
+            margin: 0 46px 0 0;
+        }
+
+        &_button-forward {
+            color: white;
+
         }
 
     }
@@ -546,19 +558,6 @@
     }
 
 
-    .fourthSlider_button-back {
-        height: 62px;
-        width: 30%;
-        margin: 0 46px 0 0;
-    }
-
-    .fourthSlider_button-forward {
-        color: white;
-        height: 62px;
-        width: 30%;
-    }
-
-
 
     .fourthSlider_item-right_manager-name {
         img {
@@ -566,7 +565,7 @@
             height: 128px;
         }
 
-        margin: 0 0 51px 0px;
+        // margin: 0 0 51px 0px;
 
         h4 {
             padding: 0 0 0 32px;
@@ -615,207 +614,176 @@
 
 @media (max-width: 1201px) {
     .fourthSlider {
-        &_item {
+        &-sliderLine {
             flex-direction: column;
+        }
+
+        &_items {
+            // flex: 1 1 100%; 
+            width: 100%;
+            // flex-direction: column;
+        }
+
+        &_item {
+            flex: 1 1 100% // flex-direction: column;
+        }
+
+        &_item-right {
+            flex: 1 1 100%;
+            padding: 0 50px 0 50px;
         }
 
         &_item-left {
             border: none;
         }
 
-        &_item-right {
-            padding-left: 0;
+        &_button-back {
+            width: 147px;
+            height: 47px;
+            padding: 10px 0;
         }
 
+        &_button-forward {
+            width: 147px;
+            height: 47px;
+            padding: 10px 0;
+        }
+
+
         &-sliderLine_form {
-            background: url('/img/questions_slider/background_slider_questions.png') no-repeat 80% 20%;
-            background-size: 40%;
+
+            background: url('/img/questions_slider/background_slider_questions.png') no-repeat 80% 40%;
+            background-size: 50%;
 
             [type="text"] {
+                width: 200px;
+                height: 47px;
                 padding: 0px 0px 0 10px;
             }
         }
 
         &_buttons {
-            margin: 350px 0 100px 0;
+            margin: 450px 0 100px 0;
         }
 
     }
 }
 
-// второй блок FOURTH-SLIDER 0------------------------------------------------------------------
+// второй блок FOURTH-SLIDER ------------------------------------------------------------------
 @media (max-width: 1401px) {
     .fourthSlider2 {
 
-        
+
         &_item {
             // блок слайдер состоящий из левой и правой секции
             display: flex;
             // flex-direction: column;
             min-width: 100%;
             padding-right: 52px;
+            padding-left: 62px;
             margin-left: 52px;
         }
+
         &_item-left {
             flex: 1 1 40%;
         }
-    
-        &_item-right {
-            flex: 1 1 60%;
-            padding: 0 0 0 50px;
-        }
-    
-    
+
         &-items_material {
             display: grid;
-            grid-template-columns: repeat(3,20%);
+            grid-template-columns: repeat(3, 20%);
             gap: 19px 53px;
             padding: 0 0 90px 0;
             position: relative;
         }
-    
+
+        &-item_description {
+            @include FontsizeFontWeightLineheightColor(16px, 400, 16px, #424242);
+        }
+
         &-item_material {
             display: flex;
             flex-direction: column;
             // padding-right:20px;
-    
+
             img {
                 margin-bottom: 17px;
                 width: 110px;
                 height: 110px;
             }
-    
-            span {
-                @include FontsizeFontWeightLineheightColor(16px, 400, 18px, #525252);
-            }
+
         }
-    
-    
-    
+        &_buttons {
+            margin: 115px 0 0 0 ;
+        }
+
         &-item_material_yourChoise {
-            @include FontsizeFontWeightLineheightColor(16px, 400, 18px, #525252);
-            background-color: white;
-            width: 200px;
-            height: 47px;
-            border-radius: 20px;
-            padding: 15px 10px;
-            position: absolute;
-            top: 52%;
-            left:55%;
-        }
-        
-        &_button-back {
-            height: 62px;
-            width: 157px;
-            margin: 0 46px 0 0;
-            @include FontsizeFontWeightLineheightColor(20px,400 ,23px ,#686656);
-    
-        }
-    
-        &_button-forward {
-            height: 62px;
-            width: 157px;
-            @include FontsizeFontWeightLineheightColor(20px,400 ,23px ,white);
-    
-        }
-    
-    }
-        
-    .fourthSlider-sliderLine {
-    
-    
-    }
-    .fourthSlider2_item-right_manager-name {
-        img {
-            width: 128px;
-            height: 128px;
-        }
-
-        margin: 0 0 51px 0px;
-
-        h4 {
-            padding: 0 0 0 32px;
-            @include FontsizeFontWeightLineheightColor(32px, 600, 37.5px, #424242)
-        }
-
-        div {
-            span {
-                padding: 7px 0 0 41px;
-                @include FontsizeFontWeightLineheightColor(20px, 400, 23px, #424242);
-            }
-        }
-
-    }
-
-    .fourthSlider2_item-right_hello {
-        @include FontsizeFontWeightLineheightColor(20px, 400, 23px, #424242);
-        padding: 0px 0px 32px 0;
-
-        h4 {
-            padding: 32px 0 0 0;
-            @include FontsizeFontWeightLineheightColor(24px, 600, 38px, #424242)
+            // position: absolute;
+            // left: 50%;
+            // top:50%;
+            width: 192px;
+            height: 43px;
         }
     }
 
-    .fourthSlider2_item-right_price {
-        padding: 0 0 30px 0;
 
-        img {
-            margin: 0 23px 0 0;
-            width: 70px;
-            height: 70px;
-        }
 
-    }
-
-    .fourthSlider2_hello_comments {
-        @include FontsizeFontWeightLineheightColor(20px, 400, 23px, #424242);
-    }
-
-    .item-left_text {
-        padding: 25px 0 32px 0;
-        @include FontsizeFontWeightLineheightColor(20px, 400, 23px, #424242);
-    }
 }
+
 @media (max-width: 1201px) {
     .fourthSlider2 {
 
-        
+
         &_item {
             // блок слайдер состоящий из левой и правой секции
             display: flex;
             flex-direction: column;
+            // padding-right: 52px;
+            padding-left: 42px;
         }
-    
+
+        &_item-left {
+            border: none;
+        }
+
+        &_buttons {
+            margin-top: 60px;
+        }
+
+        &_button-back {
+            width: 147px;
+            height: 47px;
+            padding: 10px 0;
+        }
+
+        &_button-forward {
+            width: 147px;
+            height: 47px;
+            padding: 10px 0;
+        }
+
         &-item_material_yourChoise {
+            width: 180px;
+            height: 47px;
+        }
+    }
+
+
+}
+
+@media (max-width: 1401px) {
+    .fourthSlider3 {
+        &_form {
+            padding: 62px 0 0 0;
+        }
+        &-sliderLine_form {
+            margin: 0px 0 0 0;
             
-            top: 52%;
-            left:52%;
         }
         &_buttons{
-            margin-bottom: 100px;
+            margin-top: 365px;
         }
-        &_button-back {
-            height: 62px;
-            width: 250px;
-         
-        }
-    
-        &_button-forward {
-            height: 62px;
-            width: 250px;
-        }
-    
+
     }
-
-
-    .fourthSlider2_item-right_hello {
-
-        h4 {
-            padding: 52px 0 0 0;
-        }
-    }
-
 }
 
 // FOOTER ------------------------------------------------------------------
@@ -969,30 +937,35 @@
         &__menu_item {
             @include FontsizeFontWeightLineheightColor(18px, 400, 22px, #424242);
         }
-        &__contacts_details, &__contacts_details div {
+
+        &__contacts_details,
+        &__contacts_details div {
             @include FontsizeFontWeightLineheightColor(18px, 400, 22px, #424242);
         }
+
         &__contacts_details img {
-            margin-right:17px ;
+            margin-right: 17px;
         }
+
         &__contacts_details:nth-child(2) img {
-            margin-right:17px ;
+            margin-right: 17px;
         }
-    
+
         &__contacts_details:first-child img {
-            margin-right:17px ;
+            margin-right: 17px;
         }
+
         &__contacts_details:first-child {
-            margin-right:140px ;
+            margin-right: 140px;
         }
-    
 
-    &_requisites {
-        width: 100%;
+
+        &_requisites {
+            width: 100%;
+        }
+
+
     }
-
-
-}
 
 
 }

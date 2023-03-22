@@ -1,6 +1,7 @@
 import { firstSliderStart, secondSliderStart, thirdSliderStart, thirdSliderStartMedia1201 } from "../modules/allSliders.js"
 import { burgerMobile, arrowPosition, arrowPositionResize, arrowPositionResizeMedia1401, arrowPositionMedia1401, arrowPositionResizeMedia1201, arrowPositionMedia1201, arrowPositionMedia961, arrowPositionResizeMedia961, arrowPositionMedia744, arrowPositionResizeMedia744 } from '../modules/burger.js'
 import deleteBr from "../modules/deleteBr.js"
+import addClassChecked from "../modules/addClassChecked.js"
 
 deleteBr()
 firstSliderStart() // первый слайдер
@@ -23,4 +24,8 @@ arrowPositionResizeMedia744() // функция позиционирует ст�
 arrowPositionMedia744() // функция позиционирует стрелку относительно слайдера при медиа 1400px
 // import * as startSecondSlider from '../js/secondslider';
 // const startSecondSlider = startSecondSlider()
+
+addClassChecked() // добавляем класс checked для слайдерблока 3 в 4ом слайдере, чтобы радиобаттон имел нужный по макету стиль
+
+
 
